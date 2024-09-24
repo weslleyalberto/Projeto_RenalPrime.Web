@@ -40,8 +40,14 @@
     transition: .6s;
     background-color: var(--madeira-escura);
 }
+.navbar-expand-lg .navbar-collapse{
+    justify-content:end
+}
+.navbar-brand {
+    flex: 1
+}
 .navbar-brand i {
-    color:white
+    color: white
 }
 .navbar-brand span{
     color:var(--sauvignon);
@@ -53,7 +59,7 @@
     color:var(--verde-mineral)
 }
 .hero-section{
-    margin-top: 12em;
+    margin-top: 9em;
 }
 /*Bem vindos - section 2*/
 #section_2{
