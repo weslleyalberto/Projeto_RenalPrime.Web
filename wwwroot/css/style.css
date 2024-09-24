@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--title-font-family);
+}
+:root{
+    --verde-escuro:#00382e;
+    --verde-mineral:#50675a;
+    --madeira-escura:#8e5c41;
+    --sauvignon:#f6ede6
+
+}
+.navbar{
+    background-color: initial!important;
+    background-color: var(--verde-escuro)!important;
+}
+.container-logo{
+    text-align: center;
+}
+.container-logo img{
+    border: 7px solid var(--verde-mineral);
+    border-radius: 50%;
+}
+.container-logo h3{
+    color: var(--sauvignon);
+    text-transform: uppercase;
+}
+.container-logo h6{
+    color: var(--sauvignon);
+    text-transform: uppercase;
+    font-size: medium;
+}
+.hero-section{
+    background-image: none;
+    transition: .6s;
+    background-color: var(--verde-escuro);
+}
+.sticky-wrapper.is-sticky .navbar{
+    transition: .6s;
+    background-color: var(--madeira-escura);
+}
+.navbar-brand i {
+    color:white
+}
+.navbar-brand span{
+    color:var(--sauvignon);
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    color:var(--sauvignon)
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color:var(--verde-mineral)
+}
+.hero-section{
+    margin-top: 12em;
+}
+/*Bem vindos - section 2*/
+#section_2{
+    background-color: var(--sauvignon);
+    color: var(--sauvignon);
+    padding: 2em;
+}
+#container-master-wellcome{
+    background-color: var(--sauvignon);
+}
+#container-wellcome * {
+    font-family: var(--title-font-family);
+    
+}
+#content-wellcome{
+    color: var(--verde-mineral);
+    text-align: justify;
+    font-weight: 400;
+    margin-top: 1em;
+}
+#container-wellcome h2{
+    color: var(--verde-escuro);
+    text-transform: uppercase;
+    font-size: 3em;
+}
+#container-wellcome h4{
+    color: var(--madeira-escura);
+    text-transform: capitalize;
+    font-size: 2em;
+   
+}
+.tab-content{
+    background-color:var(--sauvignon)
+}
+#title-container-wellcome{
+    color: var(--verde-escuro);
+    font-weight: bold;
+}
+.custom-block{
+    padding: 0;
+    padding: 30px 0;
+}
+.custom-block:hover{
+    background-color: initial;
+    background-color: 0;
+}
+#line-container-wellcome{
+    width: 10em;
+    border-top: 10px solid var(--verde-escuro);
+}
+.img-custom-block{
+    background: url('/images/img_person/img108.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    position: sticky;
+}
+/*Compromisso*/
+.section-overlay{
+    /* background-image: var(--verde-mineral); */
+    background-image: linear-gradient(15deg, var(--verde-escuro) 0%, var(--verde-mineral) 100%);
+}
+.timeline-section{
+    background-image: none;
+    background-color: var(--verde-mineral);
+    background-image: url('/images/img_person/img40_edit.png');
+    
+    background-size: cover;
+}
+.site-footer{
+    background-color: var(--verde-mineral);
+    border-bottom: 10px solid var(--verde-escuro);
+}
+.site-footer::after{
+   
+    border-color: transparent transparent var(--verde-escuro) transparent;
+}
+.icon-holder{
+    width: 200px;
+    height: 200px;
+}
+#title-comprimisso h2 {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+#subtitle-compromisso{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.listagem-compromisso{
+    padding-left: 0!important;
+
+}
+.timeline-container 
+.vertical-scrollable-timeline 
+.listagem-compromisso li{
+    list-style-type: none;
+    padding-top: 0!important;
+    padding-left: 0!important;
+    color: white;
+    line-height: 2.5;
+    
+
+}
+.timeline-container 
+.vertical-scrollable-timeline li 
+.icon-holder::before{
+    background-color: var(--verde-escuro);
+}
+.timeline-container
+ .vertical-scrollable-timeline 
+ li.active .icon-holder::before{
+    background-color: var(--madeira-escura);
+}
+/* .timeline-container 
+.vertical-scrollable-timeline 
+li::before{
+    background-color: var(--verde-escuro);
+} */
+.timeline-container 
+.vertical-scrollable-timeline 
+li.active .icon-holder{
+background-color: var(--sauvignon);
+}
+/*Footer*/
+footer * {
+    color:var(--sauvignon)
+}
+#row-footer{
+    justify-content: center;
+    align-items: center;
+}
+footer .container-logo img{
+    border: 7px solid var(--verde-escuro);
+  
+    
+}
+.timeline-container .vertical-scrollable-timeline li{
+    padding-bottom: 0;
+    list-style: none;
+   
+   
+}
+
+#container-footer-telefones h6,
+.site-footer-link,
+.site-footer-title{
+    color: var(--sauvignon)!important;
+}
+/*jornada paciente*/
+.custom-block-jornada{
+    background: url('/images/img_person/img44.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    position: sticky;
+}
+@media screen and (max-width:47.81em){
+    .img-custom-block,
+    .custom-block-jornada{
+        height: 200px;
+    }
+}
