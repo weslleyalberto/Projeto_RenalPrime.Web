@@ -20,6 +20,7 @@ namespace Projeto_RenalPrime.Web.Controllers
         public IActionResult Investimento() => View();
         public IActionResult JornadaPaciente() => View();
         public IActionResult Contatos() => View();
+        public IActionResult Dialog_Plus() => View();
         public IActionResult Privacy()
         {
             return View();
