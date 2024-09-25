@@ -61,8 +61,40 @@
 .hero-section{
     margin-top: 9em;
 }
+/**Sections Master*/
+.section{
+    margin-top:10em
+}
+
+/*Segunda Header- Barra de navegação*/
+.site-header {
+    background-image:none;
+    background-color:var(--sauvignon)!important;
+   /* background-image: linear-gradient(15deg, var(--verde-escuro) 0%, var(--verde-mineral) 100%);*/
+}
+.breadcrumb-item a,
+.breadcrumb-item li,
+.breadcrumb-item.active,
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--verde-escuro) !important;
+    
+
+}
+
+.section-header-nav{
+    margin-top:5em;
+   
+}
+#menu-navegacao h2 {
+    color: var(--verde-escuro);
+    text-transform: uppercase;
+}
+#menu-navegacao h4{
+    text-transform:uppercase;
+    color:var(--madeira-escura)
+}
 /*Bem vindos - section 2*/
-#section_2{
+#section_2 {
     background-color: var(--sauvignon);
     color: var(--sauvignon);
     padding: 2em;
@@ -224,9 +256,12 @@ footer .container-logo img{
     border-radius: 7px;
     position: sticky;
 }
-@media screen and (max-width:47.81em){
-    .img-custom-block,
-    .custom-block-jornada{
+/**Contatos*/
+.section-bg{
+    background-color:var(--sauvignon)
+}
+@media screen and (max-width:47.81em) {
+    .img-custom-block, .custom-block-jornada{
         height: 200px;
     }
 }
