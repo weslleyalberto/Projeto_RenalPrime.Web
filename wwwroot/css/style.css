@@ -17,6 +17,11 @@
     background-color: var(--verde-escuro) !important;
 }
 
+#section_2,
+#section_3,
+#section_4{
+    background-color:var(--sauvignon);
+}
 .container-logo {
     text-align: center;
 }
@@ -157,7 +162,7 @@
 
 .custom-block {
     padding: 0;
-    padding: 30px 0;
+    padding: 0 0;
 }
 
     .custom-block:hover {
@@ -317,18 +322,27 @@ li.active .icon-holder {
 #body-subtitle-localizacao{
     font-weight:normal!important;
     text-align:justify;
-    line-height:1.5em
+    line-height:1.5em;
+    padding:1em 1em 0 0;
 }
 .container-contatos{
     display:flex;
     flex-direction:column;
+    gap:2em
    
    
 }
-.wapper-row-contatos-telefones{
-    display:flex;
-    
-   
+.wapper-row-contatos-telefones, 
+.container-contatos__emails {
+    display: flex;
+    padding: 1em;
+    border: 1px solid var(--sauvignon);
+    border-radius: 17px;
+    background-color:var(--verde-mineral);
+}
+.container-contatos__emails__title{
+    font-weight:bold;
+    font-size:1.2em;
 }
 .container-contatos__telefone__icons,
 .container-contatos__emails__icons {
@@ -337,29 +351,35 @@ li.active .icon-holder {
     color: var(--sauvignon);
     background: var(--verde-mineral);
     border-radius: 50%;
-
-    
+}
+.container-contatos__telefone__title{
+    color:var(--sauvignon);
+    font-size:1.2em;
+    font-weight:bold;
 }
 .wapper-colun-telefones {
-   
-    display:flex;
-    
+    display: flex;
+    flex-direction: column;
 }
 .container-contatos__emails_wrapper-col{
     display: flex;
+    align-items:start;
     
 }
 .container-contatos__telefone__body {
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
    
     /*Footer*/
     footer * {
         color: var(--sauvignon)
     }
-.container-contatos__emails__body__wrapper{
-    margin-top:1.7em;
-    color:var(--sauvignon);
+.container-contatos__emails__body{
+    margin-top:1em
+}
+.container-contatos__emails__body__wrapper {
+   
+    color: var(--sauvignon);
 }
 #row-footer {
     justify-content: center;
@@ -383,8 +403,9 @@ footer .container-logo img {
 #container-master-contato {
     padding: 1em;
    
-    background-color:var(--verde-mineral)!important;
+    
     border-radius:10px 10px 0 0;
+    border-bottom:2px dashed var(--sauvignon);
 }
 #container-footer-telefones h6,
 .site-footer-link,
