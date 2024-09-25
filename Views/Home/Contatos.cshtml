@@ -1,12 +1,11 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Contatos";
 }
-<header class="site-header d-flex flex-column justify-content-center align-items-center section-header-nav">
+<header class="site-header d-flex flex-column justify-content-center  section-header-nav">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row resposiva-container">
 
-            <div class="col-lg-5 col-5" id="menu-navegacao">
+            <div class="container col-md-6" id="menu-navegacao">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Início</a></li>
@@ -14,76 +13,117 @@
                         <li class="breadcrumb-item active" aria-current="page">  Localização</li>
                     </ol>
                 </nav>
-               
 
-                <h2 >Localização</h2>
+
+                <h2>Localização</h2>
                 <h4>Privilegiada</h4>
+                <h6 class="mb-3">
+                    A Clínica Renal Prime está localizada no Centro
+                    Clínico Cléo Octávio, na Asa Norte, em uma região
+                    central e acessível de Brasília.
+                </h6>
+                <div class="container-localizacao">
+                    <div class="container-localizacao__icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div class="container-localizacao__text">
+                        <div class="container-localizacao__text__title">
+                            <a href="https://maps.app.goo.gl/M18JaWNkfnUgMVgv8"
+                               title="Localização Renal Prime" target="_blank">
+                                Google Maps
+                            </a>
+
+                        </div>
+                        <div class="container-localizacao__text__endereco">
+                            SMHN, Quadra 02, Bloco B, Salas
+                            701 a 703 e 705 a 711.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="container col-md-7">
-                <img src="~/images/img_person/img119.jpg" width="100%" style="border-radius:7px" />
+            <div class="container col-md-6" style="position:relative">
+                <img src="~/images/img_person/img119.jpg" width="100%" height="400" style="border-radius:7px" />
+                <div class="container-vagas-contato">
+                    <h6 style="width:80%;font-size:1.2em">10 vagas de garagem para nossos pacientes!</h6>
+                </div>
             </div>
+
         </div>
     </div>
 </header>
-  <section class="section-padding section-bg">
-                <div class="container">
-                    <div class="row">
+<section class="section-bg" id="menu-navegacao">
+    <div class="container">
+        <div class="row">
 
-                        <div class="col-lg-12 col-12">
-                            <h3 class="mb-4 pb-2">Onde Estamos</h3>
-                        </div>
+            <div class="col-lg-12 col-12">
+                <h2 class="pb-2">Venha Conhecer</h2>
+                <h4>Nossas Instalações</h4>
+            </div>
 
-                       @*  <div class="col-lg-6 col-12">
-                            <form action="#" method="post" class="custom-form contact-form" role="form">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="form-floating">
-                                            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="">
-                                            
-                                            <label for="floatingInput">Name</label>
-                                        </div>
-                                    </div>
+            <div class="col-lg-6 col-12">
+                <h6 id="body-subtitle-localizacao">
+                    Convidamos você a conhecer de perto a Clínica Renal Prime
+                    e descobrir como nosso ambiente acolhedor e nossos
+                    serviços de excelência podem transformar a experiência de
+                    tratamento renal. Aqui, cada detalhe foi pensado para
+                    proporcionar o máximo conforto e bem-estar aos nossos
+                    pacientes, sempre com o compromisso de oferecer um
+                    atendimento humanizado e ético. Nossa equipe está
+                    preparada para cuidar de cada paciente com dedicação e
+                    respeito, priorizando a saúde e a qualidade de vida. Venha
+                    nos visitar e veja como podemos fazer a diferença no seu
+                    cuidado
+                </h6>
+             
+            </div>
 
-                                    <div class="col-lg-6 col-md-6 col-12"> 
-                                        <div class="form-floating">
-                                            <input type="email" name="email" id="email" pattern="" class="form-control" placeholder="Email address" required="">
-                                            
-                                            <label for="floatingInput">Email address</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 col-12">
-                                        <div class="form-floating">
-                                            <input type="text" name="subject" id="name" class="form-control" placeholder="Name" required="">
-                                            
-                                            <label for="floatingInput">Subject</label>
-                                        </div>
-
-                                        <div class="form-floating">
-                                            <textarea class="form-control" id="message" name="message" placeholder="Tell me about the project"></textarea>
-                                            
-                                            <label for="floatingTextarea">Tell me about the project</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-12 ms-auto">
-                                        <button type="submit" class="form-control">Submit</button>
-                                    </div>
+            <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0" id="container-master-contato" >
+                <div class="container-contatos">
+                    <div class="container-contatos__telefones">
+                        <div class="wapper-row-contatos-telefones">
+                            <div class="container-contatos__telefone__icons">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div class="wapper-colun-telefones">
+                                <div class="container-contatos__telefone__title">
+                                </div>
+                                <div class=container-contatos__telefone__body>
+                                    <h6 style="color:var(--sauvignon)"> (61) 9.9209-7705 - Vanuza</h6>
+                                    <h6 style ="color:var(--sauvignon)"> (61) 9.8228-0500 - Eilson</h6>
 
                                 </div>
-                            </form>
-                        </div> *@
+                            </div>
 
-                        <div class="col-lg-12 col-12 mx-auto mt-5 mt-lg-0">
-                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4655.584459429568!2d-47.8884225516753!3d-15.783706261325348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x935a3aef14eaaaab%3A0xb90b7bd0c7f322d5!2sBL%20B%20-%20SMHN%20Quadra%2002%20-%20Asa%20Norte%2C%20Bras%C3%ADlia%20-%20DF%2C%2070710-146!3m2!1d-15.784719099999998!2d-47.8850189!5e1!3m2!1spt-BR!2sbr!4v1727222068376!5m2!1spt-BR!2sbr"
-                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                            <h5 class="mt-4 mb-2">Topic Listing Center</h5>
-
-                            <p>Bay St &amp;, Larkin St, San Francisco, CA 94109, United States</p>
                         </div>
 
+
+
+                    </div>
+                    <div class="container-contatos__emails">
+                        <div class="container-contatos__emails_wrapper-col">
+                            <div class="container-contatos__emails__icons">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="container-contatos__emails__body__wrapper">
+                                <div class="container-contatos__emails__title">
+                                    vanuzacristina.sa@gmail.com
+                                </div>
+                                <div class="container-contatos__emails__body">
+                                    eilsonfilho@hotmail.com
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
+                @*    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4655.584459429568!2d-47.8884225516753!3d-15.783706261325348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x935a3aef14eaaaab%3A0xb90b7bd0c7f322d5!2sBL%20B%20-%20SMHN%20Quadra%2002%20-%20Asa%20Norte%2C%20Bras%C3%ADlia%20-%20DF%2C%2070710-146!3m2!1d-15.784719099999998!2d-47.8850189!5e1!3m2!1spt-BR!2sbr!4v1727222068376!5m2!1spt-BR!2sbr"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <h5 class="mt-4 mb-2">Topic Listing Center</h5>
+
+                <p>Bay St &amp;, Larkin St, San Francisco, CA 94109, United States</p> *@
+            </div>
+
+        </div>
+    </div>
+</section>
 

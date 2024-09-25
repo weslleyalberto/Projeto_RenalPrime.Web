@@ -1,97 +1,116 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--title-font-family);
 }
-:root{
-    --verde-escuro:#00382e;
-    --verde-mineral:#50675a;
-    --madeira-escura:#8e5c41;
-    --sauvignon:#f6ede6
 
+:root {
+    --verde-escuro: #00382e;
+    --verde-mineral: #50675a;
+    --madeira-escura: #8e5c41;
+    --sauvignon: #f6ede6
 }
-.navbar{
-    background-color: initial!important;
-    background-color: var(--verde-escuro)!important;
+
+.navbar {
+    background-color: initial !important;
+    background-color: var(--verde-escuro) !important;
 }
-.container-logo{
+
+.container-logo {
     text-align: center;
 }
-.container-logo img{
-    border: 7px solid var(--verde-mineral);
-    border-radius: 50%;
-}
-.container-logo h3{
-    color: var(--sauvignon);
-    text-transform: uppercase;
-}
-.container-logo h6{
-    color: var(--sauvignon);
-    text-transform: uppercase;
-    font-size: medium;
-}
-.hero-section{
+
+    .container-logo img {
+        border: 7px solid var(--verde-mineral);
+        border-radius: 50%;
+    }
+
+    .container-logo h3 {
+        color: var(--sauvignon);
+        text-transform: uppercase;
+    }
+
+    .container-logo h6 {
+        color: var(--sauvignon);
+        text-transform: uppercase;
+        font-size: medium;
+    }
+
+.hero-section {
     background-image: none;
     transition: .6s;
     background-color: var(--verde-escuro);
 }
-.sticky-wrapper.is-sticky .navbar{
+
+.sticky-wrapper.is-sticky .navbar {
     transition: .6s;
     background-color: var(--madeira-escura);
 }
-.navbar-expand-lg .navbar-collapse{
-    justify-content:end
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: end
 }
+
 .navbar-brand {
     flex: 1
 }
-.navbar-brand i {
-    color: white
-}
-.navbar-brand span{
-    color:var(--sauvignon);
-}
+
+    .navbar-brand i {
+        color: white
+    }
+
+    .navbar-brand span {
+        color: var(--sauvignon);
+    }
+
 .navbar-expand-lg .navbar-nav .nav-link {
-    color:var(--sauvignon)
+    color: var(--sauvignon)
 }
-.navbar-expand-lg .navbar-nav .nav-link:hover{
-    color:var(--verde-mineral)
-}
-.hero-section{
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: var(--verde-mineral)
+    }
+
+.hero-section {
     margin-top: 9em;
 }
 /**Sections Master*/
-.section{
-    margin-top:10em
+.section {
+    margin-top: 10em
 }
 
 /*Segunda Header- Barra de navegação*/
 .site-header {
-    background-image:none;
-    background-color:var(--sauvignon)!important;
-   /* background-image: linear-gradient(15deg, var(--verde-escuro) 0%, var(--verde-mineral) 100%);*/
+    background-image: none;
+    background-color: var(--sauvignon) !important;
+    /* background-image: linear-gradient(15deg, var(--verde-escuro) 0%, var(--verde-mineral) 100%);*/
 }
+
 .breadcrumb-item a,
 .breadcrumb-item li,
 .breadcrumb-item.active,
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--verde-escuro) !important;
-    
-
 }
 
-.section-header-nav{
-    margin-top:5em;
-   
+.section-header-nav {
+    margin-top: 5em;
 }
+
 #menu-navegacao h2 {
     color: var(--verde-escuro);
     text-transform: uppercase;
 }
-#menu-navegacao h4{
-    text-transform:uppercase;
-    color:var(--madeira-escura)
+
+#menu-navegacao h4 {
+    text-transform: uppercase;
+    color: var(--madeira-escura)
+}
+#menu-navegacao h6{
+    font-size:1.2em;
+    font-weight:normal;
+    color:var(--verde-mineral)
 }
 /*Bem vindos - section 2*/
 #section_2 {
@@ -99,50 +118,59 @@
     color: var(--sauvignon);
     padding: 2em;
 }
-#container-master-wellcome{
+
+#container-master-wellcome {
     background-color: var(--sauvignon);
 }
+
 #container-wellcome * {
     font-family: var(--title-font-family);
-    
 }
-#content-wellcome{
+
+#content-wellcome {
     color: var(--verde-mineral);
     text-align: justify;
     font-weight: 400;
     margin-top: 1em;
 }
-#container-wellcome h2{
+
+#container-wellcome h2 {
     color: var(--verde-escuro);
     text-transform: uppercase;
     font-size: 3em;
 }
-#container-wellcome h4{
+
+#container-wellcome h4 {
     color: var(--madeira-escura);
     text-transform: capitalize;
     font-size: 2em;
-   
 }
-.tab-content{
-    background-color:var(--sauvignon)
+
+.tab-content {
+    background-color: var(--sauvignon)
 }
-#title-container-wellcome{
+
+#title-container-wellcome {
     color: var(--verde-escuro);
     font-weight: bold;
 }
-.custom-block{
+
+.custom-block {
     padding: 0;
     padding: 30px 0;
 }
-.custom-block:hover{
-    background-color: initial;
-    background-color: 0;
-}
-#line-container-wellcome{
+
+    .custom-block:hover {
+        background-color: initial;
+        background-color: 0;
+    }
+
+#line-container-wellcome {
     width: 10em;
     border-top: 10px solid var(--verde-escuro);
 }
-.img-custom-block{
+
+.img-custom-block {
     background: url('/images/img_person/img108.jpg');
     width: 100%;
     height: 100%;
@@ -152,63 +180,74 @@
     position: sticky;
 }
 /*Compromisso*/
-.section-overlay{
+.section-overlay {
     /* background-image: var(--verde-mineral); */
     background-image: linear-gradient(15deg, var(--verde-escuro) 0%, var(--verde-mineral) 100%);
 }
-.timeline-section{
+
+.timeline-section {
     background-image: none;
     background-color: var(--verde-mineral);
     background-image: url('/images/img_person/img40_edit.png');
-    
     background-size: cover;
 }
-.site-footer{
+
+.site-footer {
     background-color: var(--verde-mineral);
     border-bottom: 10px solid var(--verde-escuro);
 }
-.site-footer::after{
+
+    .site-footer::after {
+        border-color: transparent transparent var(--verde-escuro) transparent;
+    }
+#span-icon-contato i {
+    background-color: var(--sauvignon);
+    color: var(--madeira-escura);
+    padding: .5em;
+    border-radius: 50%;
+    border:10px solid var(--madeira-escura)
    
-    border-color: transparent transparent var(--verde-escuro) transparent;
 }
-.icon-holder{
+.icon-holder {
     width: 200px;
     height: 200px;
 }
+
 #title-comprimisso h2 {
     font-size: 3em;
     font-weight: bold;
     text-transform: uppercase;
-    
 }
-#subtitle-compromisso{
+
+#subtitle-compromisso {
     color: white;
     text-transform: uppercase;
     font-weight: bold;
 }
-.listagem-compromisso{
-    padding-left: 0!important;
 
+.listagem-compromisso {
+    padding-left: 0 !important;
 }
-.timeline-container 
-.vertical-scrollable-timeline 
-.listagem-compromisso li{
+
+.timeline-container
+.vertical-scrollable-timeline
+.listagem-compromisso li {
     list-style-type: none;
-    padding-top: 0!important;
-    padding-left: 0!important;
+    padding-top: 0 !important;
+    padding-left: 0 !important;
     color: white;
     line-height: 2.5;
-    
-
 }
-.timeline-container 
-.vertical-scrollable-timeline li 
-.icon-holder::before{
+
+.timeline-container
+.vertical-scrollable-timeline li
+.icon-holder::before {
     background-color: var(--verde-escuro);
 }
+
 .timeline-container
- .vertical-scrollable-timeline 
- li.active .icon-holder::before{
+.vertical-scrollable-timeline
+li.active .icon-holder::before {
     background-color: var(--madeira-escura);
 }
 /* .timeline-container 
@@ -216,38 +255,144 @@
 li::before{
     background-color: var(--verde-escuro);
 } */
-.timeline-container 
-.vertical-scrollable-timeline 
-li.active .icon-holder{
-background-color: var(--sauvignon);
+.timeline-container
+.vertical-scrollable-timeline
+li.active .icon-holder {
+    background-color: var(--sauvignon);
 }
-/*Footer*/
-footer * {
+/*View de Contatos*/
+.container-localizacao{
+    display:flex;
+    
+    background-color:var(--verde-mineral);
+    border-radius:10px;
+    align-items:center;
+
+}
+.container-localizacao__icon{
+   
+}
+.container-localizacao__icon i{
+    font-size:7em;
     color:var(--sauvignon)
 }
-#row-footer{
+.container-localizacao__text{
+    margin-left:1em;
+    color:var(--sauvignon);
+    display:flex;
+    flex-direction:column;
+    gap:.5em;
+    font-weight:600;
+}
+.container-localizacao__text__title a{
+    color:var(--sauvignon);
+    text-decoration:underline
+}
+.container-vagas-contato{
+    position:absolute;
+    top:0px;
+    border:20px solid var(--sauvignon);
+    width:200px;
+   background-color:#50675a;
+   backdrop-filter:blur(10px);
+    border-radius:50%;
+    font-size:.8em;
+    box-sizing:content-box;
+   height:200px;
+    right:0;
+    display:flex;
+   }
+    .container-vagas-contato h6{
+        
+       
+        margin-top:4em;
+        color:white;
+        text-align:center;
+        margin-left:1em;
+        font-weight:bold;
+        
+
+       
+    }
+#body-subtitle-localizacao{
+    font-weight:normal!important;
+    text-align:justify;
+    line-height:1.5em
+}
+.container-contatos{
+    display:flex;
+    flex-direction:column;
+   
+   
+}
+.wapper-row-contatos-telefones{
+    display:flex;
+    
+   
+}
+.container-contatos__telefone__icons,
+.container-contatos__emails__icons {
+    font-size: 3em;
+    padding: .5em;
+    color: var(--sauvignon);
+    background: var(--verde-mineral);
+    border-radius: 50%;
+
+    
+}
+.wapper-colun-telefones {
+   
+    display:flex;
+    
+}
+.container-contatos__emails_wrapper-col{
+    display: flex;
+    
+}
+.container-contatos__telefone__body {
+    margin-top: 1.5em;
+}
+   
+    /*Footer*/
+    footer * {
+        color: var(--sauvignon)
+    }
+.container-contatos__emails__body__wrapper{
+    margin-top:1.7em;
+    color:var(--sauvignon);
+}
+#row-footer {
     justify-content: center;
     align-items: center;
 }
-footer .container-logo img{
+
+footer .container-logo img {
     border: 7px solid var(--verde-escuro);
-  
-    
-}
-.timeline-container .vertical-scrollable-timeline li{
-    padding-bottom: 0;
-    list-style: none;
-   
-   
 }
 
+.timeline-container .vertical-scrollable-timeline li {
+    padding-bottom: 0;
+    list-style: none;
+}
+#container-footer-telefones{
+    display:flex;
+    flex-direction:column;
+    gap:1em;
+
+}
+#container-master-contato {
+    padding: 1em;
+   
+    background-color:var(--verde-mineral)!important;
+    border-radius:10px 10px 0 0;
+}
 #container-footer-telefones h6,
 .site-footer-link,
-.site-footer-title{
-    color: var(--sauvignon)!important;
+.site-footer-title {
+    color: var(--sauvignon) !important;
 }
 /*jornada paciente*/
-.custom-block-jornada{
+.custom-block-jornada {
     background: url('/images/img_person/img44.jpg');
     width: 100%;
     height: 100%;
@@ -256,12 +401,28 @@ footer .container-logo img{
     border-radius: 7px;
     position: sticky;
 }
-/**Contatos*/
-.section-bg{
-    background-color:var(--sauvignon)
+
+#title-menu-renal {
+    text-transform: uppercase;
+    color: var(--verde-escuro);
+   /* margin:0;*/
+   margin-bottom:2em;
+    padding:0;
+    
 }
-@media screen and (max-width:47.81em) {
-    .img-custom-block, .custom-block-jornada{
+/**Contatos*/
+.section-bg {
+    background-color: var(--sauvignon)
+}
+
+    @media screen and (max-width:47.81em) {
+        .img-custom-block, .custom-block-jornada {
         height: 200px;
     }
+
 }
+    @media screen and (max-width:47.93em){
+        .resposiva-container {
+            gap: 2em;
+        }
+    }
