@@ -116,7 +116,11 @@ main {
 .section-header-nav {
     margin-top: 5em;
 }
-
+#menu-navegacao__img{
+    border:10px solid var(--verde-mineral);
+    border-radius:5em;
+    background-color:white;
+}
 #menu-navegacao h2 {
     color: var(--verde-escuro);
     text-transform: uppercase;
