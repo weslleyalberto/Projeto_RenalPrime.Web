@@ -20,9 +20,9 @@
 
     <link href="~/css/templatemo-topic-listing.css" rel="stylesheet">
     <link href="~/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
-         <style>
-    /* Spinner de carregamento */
+     /* Adiciona o estilo do spinner de carregamento */
     #spinner {
       position: fixed;
       top: 50%;
@@ -34,10 +34,9 @@
       border-radius: 50%;
       border-top-color: #3498db;
       animation: spin 1s linear infinite;
-      z-index: 9999;
+      display: none; /* Inicialmente escondido */
     }
 
-    /* Animação do spinner */
     @@keyframes spin {
       0% {
         transform: rotate(0deg);
@@ -47,17 +46,19 @@
       }
     }
 
-    /* Oculta o conteúdo até o carregamento ser completo */
-    #content {
-      display: none;
+    /* Aplica os estilos de fade-in, fade-out no main */
+    .fade-in-main {
       opacity: 0;
-      transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.5s ease-out;
     }
 
-    /* Quando o conteúdo está carregado */
-    #content.loaded {
-      display: block;
+    .main-visible {
       opacity: 1;
+    }
+
+    .fade-out-main {
+      opacity: 0;
+      transition: opacity 0.5s ease-out;
     }
   </style>
    
@@ -226,6 +227,14 @@
     <script src="~/js/custom.js"></script>
   
     <script src="~/js/loading-spinner.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // AOS.init();
+        AOS.init({
+            delay: 0,
+            duration: 1000
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

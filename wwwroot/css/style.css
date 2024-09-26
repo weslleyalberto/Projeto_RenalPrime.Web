@@ -18,25 +18,25 @@
     background-color: initial !important;
     background-color: var(--verde-escuro) !important;
 }
+/*.navbar-expand-lg .navbar-nav .nav-link .active {
+    color: red;
+}*/
 /*Efeito fade in */
-
-main {
+/*main {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-}
-
+}*/
 /* Quando o corpo estiver esmaecendo */
-.fade-out-main {
+/*.fade-out-main {
 
     opacity: 0;
     transition:  opacity .6s ease-out;
-}
-
+}*/
 /**/
 #section_2,
 #section_3,
-#section_4{
-    background-color:var(--sauvignon);
+#section_4 {
+    background-color: var(--sauvignon);
 }
 .container-logo {
     text-align: center;
