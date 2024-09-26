@@ -18,7 +18,19 @@
     background-color: initial !important;
     background-color: var(--verde-escuro) !important;
 }
+/*Efeito fade in */
 
+body {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Quando o corpo estiver esmaecendo */
+.fade-out {
+    opacity: 0;
+}
+
+/**/
 #section_2,
 #section_3,
 #section_4{

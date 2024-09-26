@@ -174,7 +174,36 @@
     <script src="~/js/jquery.sticky.js"></script>
     <script src="~/js/click-scroll.js"></script>
     <script src="~/js/custom.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Remove o fade-out quando a página carrega (fade-in)
+            document.body.classList.remove('fade-out');
 
+            // Adiciona o evento de clique em todos os links
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    const target = this.href;
+                    const isSamePageLink = target.includes("#") && (target.split("#")[0] === window.location.href.split("#")[0]);
+
+                    // Se for um link para a mesma página (âncora), não faz o efeito
+                    if (!isSamePageLink) {
+                        event.preventDefault(); // Evita o carregamento imediato da página
+
+                        // Adiciona a classe para iniciar o fade-out
+                        document.body.classList.add('fade-out');
+
+                        // Aguarda o tempo da animação antes de redirecionar
+                        setTimeout(function () {
+                            window.location.href = target;
+                        }, 500); // O tempo aqui deve corresponder à duração do 'transition' no CSS
+                    }
+                });
+            });
+        });
+
+
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
