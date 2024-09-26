@@ -1080,7 +1080,7 @@ blockquote {
     left: 10px;
     opacity: 1;
     pointer-events: auto;
-    max-width: 155px;
+    min-width: 155px;
     margin-top: 10px;
     margin-bottom: 15px;
   }

@@ -20,11 +20,51 @@
 
     <link href="~/css/templatemo-topic-listing.css" rel="stylesheet">
     <link href="~/css/style.css" rel="stylesheet">
+    <style>
+         <style>
+    /* Spinner de carregamento */
+    #spinner {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      border-top-color: #3498db;
+      animation: spin 1s linear infinite;
+      z-index: 9999;
+    }
 
+    /* Animação do spinner */
+    @@keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Oculta o conteúdo até o carregamento ser completo */
+    #content {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    /* Quando o conteúdo está carregado */
+    #content.loaded {
+      display: block;
+      opacity: 1;
+    }
+  </style>
+   
 </head>
 <body id="top">
 
-    
+    <div id="spinner"></div>
 
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -184,38 +224,8 @@
     <script src="~/js/jquery.sticky.js"></script>
     <script src="~/js/click-scroll.js"></script>
     <script src="~/js/custom.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const mainElement = document.querySelector('main'); // Seleciona o elemento <main>
-
-            // Remove o fade-out quando a página carrega (fade-in)
-            mainElement.classList.remove('fade-out-main');
-
-            // Adiciona o evento de clique em todos os links
-            const links = document.querySelectorAll('a');
-            links.forEach(link => {
-                link.addEventListener('click', function (event) {
-                    const target = this.href;
-                    const isSamePageLink = target.includes("#") && (target.split("#")[0] === window.location.href.split("#")[0]);
-
-                    // Se for um link para a mesma página (âncora), não faz o efeito
-                    if (!isSamePageLink) {
-                        event.preventDefault(); // Evita o carregamento imediato da página
-
-                        // Adiciona a classe para iniciar o fade-out no main
-                        mainElement.classList.add('fade-out-main');
-
-                        // Aguarda o tempo da animação antes de redirecionar
-                        setTimeout(function () {
-                            window.location.href = target;
-                        }, 500); // O tempo aqui deve corresponder à duração do 'transition' no CSS
-                    }
-                });
-            });
-        });
-
-
-    </script>
+  
+    <script src="~/js/loading-spinner.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
