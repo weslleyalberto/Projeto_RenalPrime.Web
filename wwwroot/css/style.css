@@ -571,6 +571,11 @@ footer .container-logo img {
         height: 120px;
     }
 }
+#img-grid img{
+    border:7px solid var(--verde-mineral);
+    border-radius:10px;
+    padding:0;
+}
 .section-bg {
     background-color: var(--sauvignon)
 }
