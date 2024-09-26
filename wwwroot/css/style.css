@@ -540,7 +540,10 @@ footer .container-logo img {
     height: 150px;
     border-color: var(--madeira-escura); /* Cor da borda do terceiro círculo */
 }
-
+#container-beneficios{
+    background-color:var(--sauvignon);
+    padding-bottom:5em;
+}
 /* Responsividade */
 @media (max-width: 768px) {
     .content-wrapper {
