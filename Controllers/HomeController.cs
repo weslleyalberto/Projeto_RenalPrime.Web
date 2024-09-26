@@ -23,6 +23,7 @@ namespace Projeto_RenalPrime.Web.Controllers
         public IActionResult Dialog_Plus() => View();
         public IActionResult BCM() => View();
         public IActionResult Hemodiafiltracao() => View();
+        public IActionResult Mobissom() => View();
         public IActionResult Privacy()
         {
             return View();
