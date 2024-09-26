@@ -176,8 +176,10 @@
     <script src="~/js/custom.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+            const mainElement = document.querySelector('main'); // Seleciona o elemento <main>
+
             // Remove o fade-out quando a página carrega (fade-in)
-            document.body.classList.remove('fade-out');
+            mainElement.classList.remove('fade-out-main');
 
             // Adiciona o evento de clique em todos os links
             const links = document.querySelectorAll('a');
@@ -190,8 +192,8 @@
                     if (!isSamePageLink) {
                         event.preventDefault(); // Evita o carregamento imediato da página
 
-                        // Adiciona a classe para iniciar o fade-out
-                        document.body.classList.add('fade-out');
+                        // Adiciona a classe para iniciar o fade-out no main
+                        mainElement.classList.add('fade-out-main');
 
                         // Aguarda o tempo da animação antes de redirecionar
                         setTimeout(function () {

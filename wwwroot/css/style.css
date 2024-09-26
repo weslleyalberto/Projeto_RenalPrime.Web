@@ -20,13 +20,13 @@
 }
 /*Efeito fade in */
 
-body {
+main {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
 /* Quando o corpo estiver esmaecendo */
-.fade-out {
+.fade-out-main {
     opacity: 0;
 }
 
