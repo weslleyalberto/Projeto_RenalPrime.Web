@@ -18,6 +18,17 @@
     background-color: initial !important;
     background-color: var(--verde-escuro) !important;
 }
+.renal-title{
+    text-transform:uppercase;
+    font-weight:bold;
+    color:var(--verde-escuro);
+}
+.padding-top-container-header {
+   
+    padding-top: 5em;
+    border-top: 10px solid var(--verde-escuro)
+}
+
 /*.navbar-expand-lg .navbar-nav .nav-link .active {
     color: red;
 }*/
