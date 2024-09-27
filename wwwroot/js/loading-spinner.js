@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
     spinner.style.left = '50%';
     spinner.style.width = '50px';
     spinner.style.height = '50px';
-    spinner.style.border = '5px solid var(--verde-mineral)';
+    spinner.style.border = '5px solid var(--sauvignon)';
     spinner.style.borderRadius = '50%';
-    spinner.style.borderTopColor = 'var(--madeira-escura)';
+    spinner.style.borderTopColor = 'var(--verde-escuro)';
     spinner.style.animation = 'spin 1s linear infinite';
     spinner.style.transform = 'translate(-50%, -50%)';
     spinner.style.zIndex = '9999'; // Garantir que fique sobre o conteúdo

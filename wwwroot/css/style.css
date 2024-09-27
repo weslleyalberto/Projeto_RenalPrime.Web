@@ -33,6 +33,20 @@
     transition:  opacity .6s ease-out;
 }*/
 /**/
+/* Aplica os estilos de fade-in, fade-out no main */
+.fade-in-main {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.main-visible {
+    opacity: 1;
+}
+
+.fade-out-main {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
 #section_2,
 #section_3,
 #section_4 {
@@ -552,8 +566,48 @@ footer .container-logo img {
     background-color:var(--sauvignon);
     padding-bottom:5em;
 }
+.cirle-large-md {
+    width: 250px !important;
+    height: 250px !important;
+    border:0;
+    position:absolute;
+    top:0;
+    left:0;
+
+}
+.circle-medium-nossa-clinica{
+    width:250px!important;
+    height:250px!important;
+    position:absolute;
+    top:5em;
+    left:16em;
+    
+}
+.circle-small-nossa-clinica{
+    position:absolute;
+    border:0;
+    left:7em;
+    top:15em;
+
+}
+.circle-small-nossa_clinica2{
+    position:absolute;
+    border:0;
+    top:21em;
+    left:20em
+}
+.circle-small-nossa_clinica3{
+    position:absolute;
+    border:0;
+    width:250px;
+    height:250px;
+    top:22em;
+    left:7em
+}
+
 /* Responsividade */
-@media (max-width: 768px) {
+
+@media screen and (max-width: 48em) {
     .content-wrapper {
         flex-direction: column;
         align-items: center;
@@ -593,6 +647,7 @@ footer .container-logo img {
     top: 14em;
     left: 5em;
 }
+
 @media screen and (min-width:47.75em) {
     #menu-navegacao{
         padding-bottom:5em;
@@ -621,4 +676,12 @@ footer .container-logo img {
             gap: 0;
         }
     }
+@media screen and (max-width:75em) {
+    .container-none {
+        display: none;
+    }
+    .container-flexivel{
+        width:100%;
+    }
+}
    
