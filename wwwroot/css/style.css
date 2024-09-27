@@ -675,12 +675,17 @@ footer .container-logo img {
     background-image: url('/images/img_person/img57_removed_bg_red.png');
     background-size: cover;
     background-position-x: center;
+    background-color: var(--verde-mineral);
+  /*  border-radius: 0 50% 50% 0;*/
+    border-radius: 50% 10px;
 }
 .background-secondary-img-dialog {
     min-height: 630px;
     background-image: url('/images/img_person/img64._removed_bg.png');
-    background-size:cover;
-    background-position-x:center;
+    background-size: cover;
+    background-position-x: center;
+    background-color: var(--verde-mineral);
+    border-radius: 50%  10px;
 }
 
 @media screen and (min-width:47.75em) {
