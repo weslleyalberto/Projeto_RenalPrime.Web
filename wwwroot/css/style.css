@@ -604,9 +604,31 @@ footer .container-logo img {
     top:22em;
     left:7em
 }
-
+/*Circle Hemo*/
+/*.circle-large-hemodiafiltracao{
+    position:absolute;
+    top:0;
+    left:100px;
+    right:0;
+    height:300px!important;
+    width:300px!important;
+}
+.circle-medium-hemodiafiltracao {
+    position: absolute;
+    left: 0;
+    top: 190px;
+    width:250px!important;
+    height:250px!important;
+}
+.circle-small-hemodiafiltracao {
+    width:200px;
+    height:200px;
+    position: absolute;
+    top: 270px;
+    left:230px;
+    bottom:0;
+}*/
 /* Responsividade */
-
 @media screen and (max-width: 48em) {
     .content-wrapper {
         flex-direction: column;
@@ -647,6 +669,19 @@ footer .container-logo img {
     top: 14em;
     left: 5em;
 }
+/*BG*/
+.background-primary-img-dialog {
+    min-height: 630px;
+    background-image: url('/images/img_person/img57_removed_bg_red.png');
+    background-size: cover;
+    background-position-x: center;
+}
+.background-secondary-img-dialog {
+    min-height: 630px;
+    background-image: url('/images/img_person/img64._removed_bg.png');
+    background-size:cover;
+    background-position-x:center;
+}
 
 @media screen and (min-width:47.75em) {
     #menu-navegacao{
@@ -675,13 +710,42 @@ footer .container-logo img {
         .resposiva-container {
             gap: 0;
         }
+        .images-container {
+            display: none;
+        }
+    }
+   @media screen and (max-width:61.9375em){
+    .container-none{
+        display:none;
+    }
+   }
+    @media screen and (max-width:65.25em){
+        .circle-large-hemodiafiltracao {
+            position: relative;
+            width:150px;
+            height:150px;
+          
+        }
+
+        .circle-medium-hemodiafiltracao {
+            position: initial;
+            width: 150px;
+            height: 150px;
+        }
+
+        .circle-small-hemodiafiltracao {
+           
+            position: initial;
+            width: 150px;
+            height: 150px;
+        }
     }
 @media screen and (max-width:75em) {
-    .container-none {
+    /*.container-none {
         display: none;
     }
     .container-flexivel{
         width:100%;
-    }
+    }*/
 }
    
