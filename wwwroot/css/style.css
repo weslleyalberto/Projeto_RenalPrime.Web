@@ -698,6 +698,11 @@ footer .container-logo img {
     background-color: var(--verde-mineral);
     border-radius: 50%  10px;
 }
+@media screen and (max-width:47.75em){
+    .background-none {
+        display: none;
+    }
+}
 
 @media screen and (min-width:47.75em) {
     #menu-navegacao{
@@ -711,17 +716,21 @@ footer .container-logo img {
        top:15em;
 
     }
-    .circle-medium{
-        width:300px;
-        height:300px
+    
+    .circle-medium {
+        width: 300px;
+        height: 300px
     }
 }
     @media screen and (max-width:47.81em) {
         .img-custom-block, .custom-block-jornada {
         height: 200px;
     }
+        
+        
 
 }
+   
     @media screen and (max-width:47.93em){
         .resposiva-container {
             gap: 0;
