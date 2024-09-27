@@ -698,6 +698,19 @@ footer .container-logo img {
     background-color: var(--verde-mineral);
     border-radius: 50%  10px;
 }
+
+.background-primary-img-bcm {
+    background-image: url('/images/img_person/img91_sem_bg.png');
+    width:380px;
+   
+    background-position-x:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height:470px;
+    background-color:var(--verde-mineral);
+    border-radius:50% 0;
+
+}
 @media screen and (max-width:47.75em){
     .background-none {
         display: none;
