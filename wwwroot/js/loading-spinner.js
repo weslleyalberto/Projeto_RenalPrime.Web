@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Aguarda o tempo da animação antes de redirecionar
                 setTimeout(function () {
                     window.location.href = target;
-                }, 1000); // O tempo aqui deve corresponder à duração do 'transition' no CSS
+                }, 500); // O tempo aqui deve corresponder à duração do 'transition' no CSS
             }
         });
     });
