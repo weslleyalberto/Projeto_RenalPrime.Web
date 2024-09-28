@@ -1,4 +1,43 @@
-﻿<!DOCTYPE html>
+﻿@{
+    string currentController = ViewContext.RouteData.Values["action"].ToString();
+    const string colorAtual = "background:var(--madeira-escura);color:white;";
+    string color = String.Empty;
+    if(currentController == "Index")
+    {
+        color = colorAtual;
+
+    }
+    else if(currentController == "BCM")
+    {
+        color = colorAtual;
+    }
+    else if (currentController == "Dialog_Plus")
+    {
+        color = colorAtual;
+    }
+    else if (currentController == "NossaClinica")
+    {
+        color = colorAtual;
+    }
+    else if (currentController == "CorpoClinico")
+    {
+        color = colorAtual;
+    }
+    else if (currentController == "Mobissom")
+    {
+        color = colorAtual;
+    }
+    else if (currentController == "Hemodiafiltracao")
+    {
+        color = colorAtual;
+    }
+    else if(currentController == "Contatos")
+    {
+        color = colorAtual;
+    }
+
+}
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8" />
@@ -22,6 +61,16 @@
     <link href="~/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="~/css/aos.css" />
     <style>
+        .nav-link {
+            color: black; /* Cor padrão */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+            .nav-link.active {
+                color: red; /* Cor ativa */
+            }
+
         @@keyframes spin {
             0% {
                 transform: rotate(0deg);
@@ -62,49 +111,37 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="/">Home</a>
+                        <a class="nav-link click-scroll" href="/" style="@(currentController == "Index" ? @color : ""  )" data-page="home">Home</a>
                     </li>
-                    <li class="nav-item" style="display:none">
-                        <a class="nav-link click-scroll" href="/#section_2">Compromisso</a>
-                    </li>
-                    @*   <li class="nav-item">
-                    <a class="nav-link click-scroll" href="/#section_3">Compromisso</a>
-                    </li> *@
-
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="/#section_4">Jornada do Paciente</a>
-                    </li>
-
-
-
-
-                    @*  <li class="nav-item">
-                    <a class="nav-link " asp-action="Investimento" >Investimento</a>
-                    </li> *@
-                    <li class="nav-item">
-                        <a class="nav-link " asp-action="NossaClinica">Nossa Clínica</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link " asp-action="CorpoClinico">Corpo Clínico</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" asp-action="Contatos">Contato</a>
-                    </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink"
                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
 
                         <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li><a class="dropdown-item" asp-action="BCM">BCM</a></li>
+                            <li><a class="dropdown-item" asp-action="BCM" style="@(currentController == "BCM" ? @color : ""  )">BCM</a></li>
 
-                            <li><a class="dropdown-item" asp-action="Dialog_Plus">Dialog +</a></li>
-                            <li><a class="dropdown-item" asp-action="Hemodiafiltracao"> Hemodiafiltração</a></li>
-                            <li><a class="dropdown-item" asp-action="Mobissom"> Mobissom</a></li>
+                            <li><a class="dropdown-item" asp-action="Dialog_Plus" style="@(currentController == "Dialog_Plus" ? @color : ""  )">Dialog +</a></li>
+                            <li><a class="dropdown-item" asp-action="Hemodiafiltracao" style="@(currentController == "Hemodiafiltracao" ? @color : ""  )"> Hemodiafiltração</a></li>
+                            <li><a class="dropdown-item" asp-action="Mobissom" style="@(currentController == "Mobissom" ? @color : ""  )"> Mobissom</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item" style="display:none">
+                        <a class="nav-link click-scroll" href="/#section_2" data-page="#section_2">Compromisso</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link " asp-action="NossaClinica" data-page="/NossaClinica" style="@(currentController == "NossaClinica" ? @color : ""  )">Nossa Clínica</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " asp-action="CorpoClinico" style="@(currentController == "CorpoClinico" ? @color : ""  )">Corpo Clínico</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Contatos" style="@(currentController == "Contatos" ? @color : ""  )">Contato</a>
+                    </li>
+
+                   
                 </ul>
 
             </div>
@@ -209,6 +246,45 @@
         });
     </script>
     <script>
+                document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            // Função para remover a classe 'active' de todos os links
+            function removeActiveClasses() {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+            }
+
+            // Função para definir o link ativo
+            function setActiveLink(page) {
+                removeActiveClasses();
+                const activeLink = document.querySelector(`.nav-link[data-page="${page}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+
+            // Verifica a URL da página atual e ajusta o link ativo
+            const currentPath = window.location.pathname.toLowerCase();
+            if (currentPath.includes('about')) {
+                setActiveLink('about');
+            } else if (currentPath.includes('section1')) {
+                setActiveLink('section1');
+            } else if (currentPath.includes('contato')) {
+                setActiveLink('contato');
+            } else {
+                setActiveLink('home'); // Página inicial padrão
+            }
+
+            // Detecta o clique em links para seções internas e aplica a classe 'active'
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    const page = link.getAttribute('data-page');
+                    setActiveLink(page);
+                });
+            });
+        });
 
     </script>
     @await RenderSectionAsync("Scripts", required: false)
