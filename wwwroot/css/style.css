@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--title-font-family);
+    font-family: 'Neulis Alt'!important;
+   
+  
 }
 
 :root {
@@ -422,8 +424,38 @@ li.active .icon-holder {
     footer * {
         color: var(--sauvignon)
     }
-.container-contatos__emails__body{
-    margin-top:1em
+#coluna-footer-2{
+   
+    
+}
+.container-icons_footer__redes{
+    display:flex;
+    gap:2em;
+    justify-content:center;
+    padding:1em;
+}
+.container-icons_footer__redes i {
+    font-size: 2em;
+    transition:.6s;
+}
+    .container-icons_footer__redes i:hover{
+        color:var(--madeira-escura);
+        cursor:pointer;
+    }
+    #list-menu {
+        padding: 0;
+        display: flex;
+        gap: 1em;
+    }
+#list-menu li {
+    list-style: none;
+    color: var(--sauvignon);
+    font-size:.9em;
+   
+    line-height:45px
+}
+.container-contatos__emails__body {
+    margin-top: 1em
 }
 .container-contatos__emails__body__wrapper {
    
