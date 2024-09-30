@@ -13,6 +13,7 @@
     --madeira-escura: #8e5c41;
     --sauvignon: #f6ede6
 }
+
 .line-height-person {
     line-height: 30px
 }
@@ -751,7 +752,7 @@ footer .container-logo img {
 
 @media screen and (min-width:47.75em) {
     #menu-navegacao{
-        padding-bottom:5em;
+       /* padding-bottom:5em;*/
     }
     .circle-large{
         width:400px;
@@ -778,6 +779,7 @@ footer .container-logo img {
    
     @media screen and (max-width:47.93em){
         .resposiva-container {
+           
             gap: 0;
         }
         .images-container {
