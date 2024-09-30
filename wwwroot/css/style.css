@@ -744,7 +744,29 @@ footer .container-logo img {
     border-radius:50% 0;
 
 }
-@media screen and (max-width:47.75em){
+.bg-renal {
+    background-image: url('/images/logo/logo_transp.png');
+    background-repeat: no-repeat;
+   
+    background-size:210px;
+   
+    /*  background-repeat:no-repeat;
+    background-size:contain;*/
+    /* background-position-x:left;
+    background-position-y:top;*/
+}
+.bg-position-top-right {
+    background-position-x: right;
+    background-position-y: top;
+}
+.bg-position-top-left {
+    background-position-x: left;
+    background-position-y: top;
+}
+.resposiva-container {
+    flex-direction: row-reverse;
+}
+@media screen and (max-width:47.75em) {
     .background-none {
         display: none;
     }
