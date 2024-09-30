@@ -764,6 +764,9 @@ footer .container-logo img {
     background-position-y: top;
 }
 .resposiva-container {
+    
+}
+.resposiva-container-row-reverse {
     flex-direction: row-reverse;
 }
 @media screen and (max-width:47.75em) {
