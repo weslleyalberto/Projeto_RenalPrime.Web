@@ -246,6 +246,8 @@
     background-size: cover;
     border-radius: 7px;
     position: sticky;
+    border:10px solid var(--verde-mineral);
+   
 }
 /*Compromisso*/
 .section-overlay {
@@ -514,6 +516,7 @@ footer .container-logo img {
     background-size: cover;
     border-radius: 7px;
     position: sticky;
+    border:10px solid var(--verde-mineral)
 }
 
 #title-menu-renal {
@@ -786,6 +789,7 @@ footer .container-logo img {
     background-position-x: right;
     background-position-y: top;
 }
+
 .bg-position-top-left {
     background-position-x: left;
     background-position-y: top;
@@ -841,6 +845,10 @@ footer .container-logo img {
     .container-none{
         display:none;
     }
+    .img-custom-block{
+        height:250px;
+    }
+
    }
     @media screen and (max-width:65.25em){
         .circle-large-hemodiafiltracao {
