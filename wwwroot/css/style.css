@@ -18,7 +18,8 @@
     line-height: 30px
 }
 .navbar {
-    background-color: initial !important;
+   /* background-color: initial !important;*/
+   transition:.6s;
     background-color: var(--verde-escuro) !important;
 }
 .renal-title{
@@ -94,7 +95,7 @@
 
 .sticky-wrapper.is-sticky .navbar {
     transition: .6s;
-    background-color: var(--madeira-escura);
+    background-color: var(--verde-mineral);
 }
 
 .navbar-expand-lg .navbar-collapse {
