@@ -744,12 +744,21 @@ footer .container-logo img {
     border-radius:50% 0;
 
 }
+.background-primary-img-dialise{
+    background-image:url('/images/img_person/homechoice-claria.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-position-y:center;
+    height:550px;
+    width:100%;
+    background-color:var(--verde-mineral);
+    border-radius:7px 50%;
+   
+}
 .bg-renal {
     background-image: url('/images/logo/logo_transp.png');
     background-repeat: no-repeat;
-    
-    background-size:210px;
- 
+    background-size: 210px;
 }
 .bg-position-top-right {
     background-position-x: right;
