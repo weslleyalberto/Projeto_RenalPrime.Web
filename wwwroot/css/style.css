@@ -110,7 +110,8 @@
     width: 60%;
     border-top-left-radius: 200px;
     border-top-right-radius: 200px;
-    border: 5px solid var(--sauvignon)"
+    border: 5px solid var(--verde-mineral);
+    z-index:999;
 }
 .navbar-brand {
     flex: 1
