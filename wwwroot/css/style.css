@@ -96,6 +96,7 @@
 .sticky-wrapper.is-sticky .navbar {
     transition: .6s;
     background-color: var(--verde-mineral);
+    z-index:999999999;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -771,15 +772,20 @@ footer .container-logo img {
    
 }
 .background-primary-img-transplante{
-    background-image:url('/images/img_person/rins-removebg-preview.png');
+    background-image:url('/images/img_person/image-doctors-rins.jpg');
     width:100%;
-    height:600px;
+    height:700px;
     background-repeat:no-repeat;
-    background-position-x:right;
+    background-size:contain;
     background-position-y:center;
-    background-color:var(--verde-mineral);
     border-radius:7px 50%;
+    border:10px solid var(--verde-mineral);
+    background-color:var(--verde-mineral);
+  
+   
+    
 }
+
 .bg-renal {
     background-image: url('/images/logo/logo_transp.png');
     background-repeat: no-repeat;
