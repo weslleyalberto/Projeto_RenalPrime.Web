@@ -557,7 +557,15 @@ footer .container-logo img {
     max-width: 1200px;
     width: 100%;
 }
-
+.circle {
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 20px solid;
+    position: absolute;
+}
 .title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -598,14 +606,7 @@ footer .container-logo img {
     margin-left: 20px;
 }
 
-.circle {
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 20px solid;
-}
+
 
     .circle img {
         width: 100%;
@@ -616,12 +617,16 @@ footer .container-logo img {
 .circle-large {
     width: 300px;
     height: 300px;
+    top:0;
+    left:0;
     border-color: var(--verde-escuro); /* Cor da borda do primeiro círculo */
 }
 
 .circle-medium {
     width: 300px;
     height: 300px;
+    top:290px;
+    left:0;
     border-color:var(--verde-mineral); /* Cor da borda do segundo círculo */
 }
 
@@ -629,6 +634,9 @@ footer .container-logo img {
     width: 150px;
     height: 150px;
     border-color: var(--madeira-escura); /* Cor da borda do terceiro círculo */
+    top:300px;
+    left:250px
+    
 }
 #container-beneficios{
     background-color:var(--sauvignon);
@@ -701,6 +709,8 @@ footer .container-logo img {
     .content-wrapper {
         flex-direction: column;
         align-items: center;
+        
+        height:6500px;
     }
 
     .images-container {
@@ -850,9 +860,7 @@ footer .container-logo img {
            
             gap: 0;
         }
-        .images-container {
-            display: none;
-        }
+       
     }
     
    @media screen and (max-width:61.9375em){
