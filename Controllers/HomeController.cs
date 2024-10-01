@@ -26,6 +26,8 @@ namespace Projeto_RenalPrime.Web.Controllers
         public IActionResult Mobissom() => View();
         public IActionResult NossaClinica() => View();
         public IActionResult CorpoClinico() => View();
+        public IActionResult DialisePeritoneal() => View();
+        public IActionResult TransplanteRenal() => View();
         public IActionResult Privacy()
         {
             return View();
