@@ -101,7 +101,17 @@
 .navbar-expand-lg .navbar-collapse {
     justify-content: end
 }
-
+.img-nossaclinica-dupla {
+    border-radius: 10px;
+    border: 10px solid var(--verde-mineral);
+    position: absolute;
+    bottom: 0;
+    right: -130px;
+    width: 60%;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border: 5px solid var(--sauvignon)"
+}
 .navbar-brand {
     flex: 1
 }
@@ -825,6 +835,7 @@ footer .container-logo img {
             display: none;
         }
     }
+    
    @media screen and (max-width:61.9375em){
     .container-none{
         display:none;
@@ -852,11 +863,9 @@ footer .container-logo img {
         }
     }
 @media screen and (max-width:75em) {
-    /*.container-none {
-        display: none;
+    .img-nossaclinica-dupla{
+        right:0;
+       
     }
-    .container-flexivel{
-        width:100%;
-    }*/
 }
    
