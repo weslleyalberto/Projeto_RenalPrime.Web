@@ -207,7 +207,11 @@
                 </div> *@
                @*  <div class="col-md-4">
                     Teste
-                </div> *@
+                </div> *@ @*&#169; Todos os direitos reservados*@
+            </div>
+            <div class="row text-center mt-5"  id="footer-copriright">
+                <h6>Desenvolvido | por Weslley Alberto e <a href="#" target="_blank" title="Site Communic">Communic Publicidade e Marketing</a></h6>
+                <h6>&#169; @DateTime.Now.Year - Todos os Direitos Reservados</h6>
             </div>
         </div>
        @*  <div class="container">
@@ -305,7 +309,7 @@
             duration: 1000
         });
     </script>
-    <script>
+   @*  <script>
                 document.addEventListener('DOMContentLoaded', function () {
             const navLinks = document.querySelectorAll('.nav-link');
 
@@ -346,7 +350,7 @@
             });
         });
 
-    </script>
+    </script> *@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
