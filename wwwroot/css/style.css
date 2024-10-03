@@ -618,7 +618,7 @@ footer .container-logo img {
     width: 300px;
     height: 300px;
     top:0;
-    left:0;
+    left:40%;
     border-color: var(--verde-escuro); /* Cor da borda do primeiro círculo */
 }
 
@@ -822,9 +822,57 @@ footer .container-logo img {
 .resposiva-container-row-reverse {
     flex-direction: row-reverse;
 }
+
+.container-wpapper-corpo-clinico {
+    border-radius:17px;
+    background-color: var(--madeira-escura);
+}
+.container-wpapper-corpo-clinico__title{
+    color:var(--sauvignon);
+    font-weight:700;
+}
+.container-wpapper-corpo-clinico__foto {
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    background-color: var(--verde-mineral);
+    padding: 1em .5em;
+    border-radius: 7px 7px 0 0;
+    min-height: 233px;
+    gap:1em;
+}
+.container-wpapper-corpo-clinico__foto img{
+    width:30%;
+    border-radius:50%;
+}
+.container-wpapper-corpo-clinico__body{
+    padding:1em;
+    min-height:310px;
+    
+    
+}
+    .container-wpapper-corpo-clinico__body h6 {
+        color: var(--sauvignon)!important;
+        text-align: justify;
+        line-height: 30px;
+        font-size:.9em!important
+    }
+.img-medical {
+    height: 150px;
+    background-image: url('/images/img_person/doctor-nurses-special-equipment.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    background-position: center;
+    display: block;
+    border: 2px solid red;
+}
 @media screen and (max-width:47.75em) {
     .background-none {
         display: none;
+        
     }
 }
 
@@ -837,7 +885,7 @@ footer .container-logo img {
         height:400px
     }
     .absolute-layout{
-       top:15em;
+       top:10em;
 
     }
     
@@ -897,6 +945,11 @@ footer .container-logo img {
     .img-nossaclinica-dupla{
         right:0;
        
+    }
+}
+@media screen and (max-width:87.4375em){
+    .container-bl {
+        display: none;
     }
 }
    
