@@ -44,7 +44,7 @@
 }
 .container-logo__subtitle h6 {
     color: var(--sauvignon);
-    font-size:.9em;
+    font-size:1em;
 }
 
 /*.navbar-expand-lg .navbar-nav .nav-link .active {
