@@ -27,10 +27,24 @@
     font-weight:bold;
     color:var(--verde-escuro);
 }
+.logo-container-fluid{
+    display:flex;
+    gap:.5em;
+    align-items:center;
+    justify-content:start;
+}
 .padding-top-container-header {
-   
     padding-top: 5em;
     border-top: 10px solid var(--verde-escuro)
+}
+.container-logo__subtitle h3{
+    text-transform:uppercase;
+    color:var(--sauvignon);
+    font-size:1.6em;
+}
+.container-logo__subtitle h6 {
+    color: var(--sauvignon);
+    font-size:.9em;
 }
 
 /*.navbar-expand-lg .navbar-nav .nav-link .active {
@@ -157,7 +171,7 @@
 }
 
 .section-header-nav {
-    margin-top: 5em;
+    margin-top: 0;
 }
 #menu-navegacao{
     position:relative;
