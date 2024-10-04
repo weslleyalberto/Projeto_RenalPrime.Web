@@ -60,7 +60,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
-    @*     <link rel="stylesheet" href="~/css/aos.css" /> *@
+        <link rel="stylesheet" href="~/css/aos.css" />
     <link href="~/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="~/css/bootstrap-icons.css" rel="stylesheet">
@@ -301,12 +301,14 @@
     <script src="~/js/custom.js"></script>
 
     <script src="~/js/loading-spinner.js"></script>
-  @*   <script src="~/js/aos.js"></script> *@
+    <script src="~/js/aos.js"></script>
     <script>
         // AOS.init();
         AOS.init({
+            disable:'mobile',
             delay: 300,
-            duration: 1000
+            duration: 1000,
+           
         });
     </script>
    @*  <script>
