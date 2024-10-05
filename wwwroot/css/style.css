@@ -850,9 +850,10 @@ footer .container-logo img {
     display: flex;
 
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+   
     background-color: var(--verde-mineral);
-    padding: 1em .5em;
+    padding: 1em .8em;
     border-radius: 7px 7px 0 0;
     min-height: 233px;
     gap:1em;
