@@ -1,4 +1,5 @@
 ﻿const input = document.getElementById("group-input");
+
 $(document).ready(function () {
     $('#keyword').on('input', function () {
         var query = $(this).val();
@@ -7,7 +8,7 @@ $(document).ready(function () {
         if (query.length >= 4) {
             // Faz a chamada AJAX para o backend
             $.ajax({
-                url: 'https://localhost:7199/WebScraping/Search', // URL da rota de busca no ASP.NET
+                url: 'http:/Projeto_RenalPrime.Web_1/WebScraping/Search', // URL da rota de busca no ASP.NET
                 method: 'GET',
                 data: { searchTerm: query }, // Termo de busca passado ao backend
                 success: function (data) {

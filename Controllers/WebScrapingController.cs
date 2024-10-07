@@ -7,11 +7,11 @@ namespace Projeto_RenalPrime.Web.Controllers
 {
     public class WebScrapingController : Controller
     {
-
-        //const string Url = "https://localhost:7199/";
-
+#if DEBUG
+        const string Url = "https://localhost:7199/";
+#else
         const string Url = "https://projeto.clinicarenalprime.com.br/Home/";
-
+#endif
         [HttpGet]
         public async Task<IActionResult> Search(string searchTerm)
         {
