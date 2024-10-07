@@ -7,6 +7,11 @@ namespace Projeto_RenalPrime.Web.Controllers
 {
     public class WebScrapingController : Controller
     {
+#if DEBUG
+        const string Url = "https://localhost:7199/";
+#else
+        const string Url = "https://projeto.clinicarenalprime.com.br/Home/";
+#endif
         [HttpGet]
         public async Task<IActionResult> Search(string searchTerm)
         {
@@ -23,7 +28,7 @@ namespace Projeto_RenalPrime.Web.Controllers
         }
         List<string> GetLinkAPages()
         {
-            string url = "https://projeto.clinicarenalprime.com.br/Home/";
+            string url = Url;
             var web = new HtmlWeb();
             var doc = web.Load(url);
             var links = new List<string>();
