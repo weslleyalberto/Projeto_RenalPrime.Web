@@ -1,38 +1,36 @@
 ﻿@{
     ViewData["Title"] = "Home";
 }
+<style>
+   
+</style>
+
+<section class="hero-section d-flex justify-content-center align-items-center" id="section_1" 
+style="height: 70vh;margin-top:0" data-aos="fade-up">
 
 
-<section class="hero-section d-flex justify-content-center align-items-center" id="section_1" style="height: 70vh;margin-top:0" data-aos="fade-up">
-    
-    
     <div class="container">
         <div class="row">
 
-            <div class="col-lg-8 col-12 mx-auto">
-               @*  <h1 class="text-white text-center">Localize </h1> *@
+            <div class="col-lg-7 col-12 mx-auto">
+                <h1 class="text-white text-center">Pesquisa </h1>
 
-              @*   <h6 class="text-center">platform for creatives around the world</h6> *@
+                @*   <h6 class="text-center">platform for creatives around the world</h6> *@
 
-                <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
-                    <div class="input-group input-group-lg">
+                <div class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search" style="margin-bottom:0!important">
+                    <div class="input-group input-group-lg" id="group-input">
                         <span class="input-group-text bi-search" id="basic-addon1">
 
                         </span>
 
-                        <input name="keyword" type="search" class="form-control" id="keyword" placeholder="Procedimentos, Serviços . . ." aria-label="Search">
-                        <style>
-                            #btn-search{
-                                background-color:var(--verde-mineral);
-                            }
-                            #btn-search:hover {
-                                background-color:var(--verde-escuro)!important
-                            }
-                        </style>
-                        <button type="submit" class="form-control" id="btn-search">Procurar</button>
+                        <input name="keyword" type="search" autocomplete="off"
+                               class="form-control" id="keyword" placeholder="Digite 4 caracteres ou mais " aria-label="Search">
+
                     </div>
-                </form>
+                </div>
+                <div id="search-results"></div>
             </div>
+
 
         </div>
     </div>
@@ -146,50 +144,50 @@
                             <div class="col-lg-6 col-md-12 col-12 mb-4 mb-lg-0" data-aos="flip-left">
 
                                 <div class="custom-block">
-                                    
 
-                                        <div class="d-flex">
-                                            <div>
-                                                <h5 class="mb-2 mt-3" id="title-container-wellcome">
-                                                    CUIDADO DE EXCELÊNCIA E BEM-ESTAR INTEGRAL
-                                                </h5>
-                                                <!-- <img src="/images/img_person/img39.jpg" class="custom-block-image img-fluid" alt=""> -->
-                                                <p class="mb-0" id="content-wellcome">
-                                                    Nossa missão é proporcionar cuidados de excelência em tratamentos renais,
-                                                    priorizando a saúde e o bem-estar de cada paciente.
-                                                </p>
-                                            </div>
 
-                                            <!-- <span class="badge bg-design rounded-pill ms-auto">75</span> -->
+                                    <div class="d-flex">
+                                        <div>
+                                            <h5 class="mb-2 mt-3" id="title-container-wellcome">
+                                                CUIDADO DE EXCELÊNCIA E BEM-ESTAR INTEGRAL
+                                            </h5>
+                                            <!-- <img src="/images/img_person/img39.jpg" class="custom-block-image img-fluid" alt=""> -->
+                                            <p class="mb-0" id="content-wellcome">
+                                                Nossa missão é proporcionar cuidados de excelência em tratamentos renais,
+                                                priorizando a saúde e o bem-estar de cada paciente.
+                                            </p>
                                         </div>
 
+                                        <!-- <span class="badge bg-design rounded-pill ms-auto">75</span> -->
+                                    </div>
 
-                                  
+
+
                                 </div>
                             </div>
 
                             <div class="col-lg-6 col-md-12 col-12" data-aos="flip-up">
                                 <div class="custom-block ">
-                                   
-                                        <div class="d-flex">
-                                            <div>
-                                                <h5 class="mb-2 mt-3" id="title-container-wellcome">
-                                                    REFERÊNCIA EM
-                                                    TRATAMENTOS RENAIS
-                                                </h5>
-                                                <!-- <img src="/images/img_person/img40.jpg" class="custom-block-image img-fluid" alt=""> -->
-                                                <p class="mb-0" id="content-wellcome">
-                                                    Almejamos ser a principal referência em tratamentos
-                                                    renais no Brasil, reconhecidos pela nossa inovação, eficiência e
-                                                    humanização no atendimento.
-                                                </p>
-                                            </div>
 
-                                            <!-- <span class="badge bg-design rounded-pill ms-auto">100</span> -->
+                                    <div class="d-flex">
+                                        <div>
+                                            <h5 class="mb-2 mt-3" id="title-container-wellcome">
+                                                REFERÊNCIA EM
+                                                TRATAMENTOS RENAIS
+                                            </h5>
+                                            <!-- <img src="/images/img_person/img40.jpg" class="custom-block-image img-fluid" alt=""> -->
+                                            <p class="mb-0" id="content-wellcome">
+                                                Almejamos ser a principal referência em tratamentos
+                                                renais no Brasil, reconhecidos pela nossa inovação, eficiência e
+                                                humanização no atendimento.
+                                            </p>
                                         </div>
 
+                                        <!-- <span class="badge bg-design rounded-pill ms-auto">100</span> -->
+                                    </div>
 
-                                  
+
+
                                 </div>
                             </div>
                         </div>
@@ -197,7 +195,7 @@
                 </div>
             </div>
         </div>
-        
+
 
     </div>
 </section>
@@ -376,71 +374,57 @@
         </div>
 </section>
 
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        const input = document.getElementById("group-input");
+        $(document).ready(function () {
+            $('#keyword').on('input', function () {
+                var query = $(this).val();
 
+                // Verifica se o usuário digitou pelo menos 4 caracteres
+                if (query.length >= 4) {
+                    // Faz a chamada AJAX para o backend
+                    $.ajax({
+                        url: 'https://localhost:7199/WebScraping/Search', // URL da rota de busca no ASP.NET
+                        method: 'GET',
+                        data: { searchTerm: query }, // Termo de busca passado ao backend
+                        success: function (data) {
 
+                            // Limpa os resultados anteriores
+                            $('#search-results').empty();
+                            console.log(data.length)
+                            if (data.length > 0) {
+                                input.style.borderRadius = "20px 20px  0 0";
+                                // Popula os novos resultados
+                                $.each(data, function (index, item) {
+                                    $('#search-results').append(
+                                        `<div class="result-item">
+                                                                        <a href="${item.url}">${item.title}</a>
+                                                                                <p>${item.content}</p>
+                                                                    </div>`
+                                    );
+                                });
+                            }
+                            else {
+                                input.style.borderRadius = "100px";
+                               
+                            }
 
-@* <section class="contact-section section-padding section-bg" id="section_5">
-    <div class="container">
-        <div class="row">
+                        },
 
-            <div class="col-lg-12 col-12 text-center">
-                <h2 class="mb-5">Get in touch</h2>
-            </div>
+                    });
+                }
 
-            <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.065641062665!2d-122.4230416990949!3d37.80335401520422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858127459fabad%3A0x808ba520e5e9edb7!2sFrancisco%20Park!5e1!3m2!1sen!2sth!4v1684340239744!5m2!1sen!2sth" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+                else {
+                    // Limpa os resultados se a entrada for menor que 4 caracteres
+                    input.style.borderRadius = "100px";
+                    $('#search-results').empty();
+                }
+            });
+        });
+    </script>
+}
 
-            <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
-                <h4 class="mb-3">Head office</h4>
-
-                <p>Bay St &amp;, Larkin St, San Francisco, CA 94109, United States</p>
-
-                <hr>
-
-                <p class="d-flex align-items-center mb-1">
-                    <span class="me-2">Phone</span>
-
-                    <a href="tel: 305-240-9671" class="site-footer-link">
-                        305-240-9671
-                    </a>
-                </p>
-
-                <p class="d-flex align-items-center">
-                    <span class="me-2">Email</span>
-
-                    <a href="mailto:info@company.com" class="site-footer-link">
-                        info@company.com
-                    </a>
-                </p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-12 mx-auto">
-                <h4 class="mb-3">Dubai office</h4>
-
-                <p>Burj Park, Downtown Dubai, United Arab Emirates</p>
-
-                <hr>
-
-                <p class="d-flex align-items-center mb-1">
-                    <span class="me-2">Phone</span>
-
-                    <a href="tel: 110-220-3400" class="site-footer-link">
-                        110-220-3400
-                    </a>
-                </p>
-
-                <p class="d-flex align-items-center">
-                    <span class="me-2">Email</span>
-
-                    <a href="mailto:info@company.com" class="site-footer-link">
-                        info@company.com
-                    </a>
-                </p>
-            </div>
-
-        </div>
-    </div>
-</section> *@
 
 

@@ -62,7 +62,7 @@ namespace Projeto_RenalPrime.Web.Controllers
             List<SearchResult> results = new List<SearchResult>();
             foreach (var div in divs)
             {
-                System.Web.HttpUtility.HtmlDecode("UFT_8");
+                
                 if (div.InnerText.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
                 {
                     int indexOfTerm = div.InnerText.IndexOf(searchTerm, StringComparison.OrdinalIgnoreCase);
@@ -70,9 +70,9 @@ namespace Projeto_RenalPrime.Web.Controllers
                     //Define o inínio e o fim do trecho que será exibido
                     string contentSnippet = div.InnerText.Substring(indexOfTerm);
                     // Se o conteúdo for maior que 150 caracteres após o termo, cortar
-                    if (contentSnippet.Length > 100)
+                    if (contentSnippet.Length > 80)
                     {
-                        contentSnippet = contentSnippet.Substring(0, 100) + "...";
+                        contentSnippet = contentSnippet.Substring(0, 80) + "...";
                         contentSnippet = contentSnippet.Replace("\r\n", " ").Replace("\n"," ").Replace("\r"," ").Replace("  ", "").Trim();
                     }
 
