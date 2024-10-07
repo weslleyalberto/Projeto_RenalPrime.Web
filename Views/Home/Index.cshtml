@@ -10,9 +10,9 @@
         <div class="row">
 
             <div class="col-lg-8 col-12 mx-auto">
-                <h1 class="text-white text-center">Discover. Learn. Enjoy</h1>
+               @*  <h1 class="text-white text-center">Localize </h1> *@
 
-                <h6 class="text-center">platform for creatives around the world</h6>
+              @*   <h6 class="text-center">platform for creatives around the world</h6> *@
 
                 <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
                     <div class="input-group input-group-lg">
@@ -20,9 +20,16 @@
 
                         </span>
 
-                        <input name="keyword" type="search" class="form-control" id="keyword" placeholder="Design, Code, Marketing, Finance ..." aria-label="Search">
-
-                        <button type="submit" class="form-control">Search</button>
+                        <input name="keyword" type="search" class="form-control" id="keyword" placeholder="Procedimentos, Serviços . . ." aria-label="Search">
+                        <style>
+                            #btn-search{
+                                background-color:var(--verde-mineral);
+                            }
+                            #btn-search:hover {
+                                background-color:var(--verde-escuro)!important
+                            }
+                        </style>
+                        <button type="submit" class="form-control" id="btn-search">Procurar</button>
                     </div>
                 </form>
             </div>
