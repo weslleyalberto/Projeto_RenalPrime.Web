@@ -1074,9 +1074,9 @@ blockquote {
     padding-bottom: 50px;
   }
   
-  .navbar {
+  /*.navbar {
     background-color: var(--secondary-color);
-  }
+  }*/
 
   .navbar-nav .dropdown-menu {
     position: relative;

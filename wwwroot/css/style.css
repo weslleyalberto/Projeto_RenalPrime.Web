@@ -22,8 +22,11 @@
 .navbar {
    /* background-color: initial !important;*/
    transition:.6s;
-    background-color: var(--verde-escuro) !important;
+    background-color: var(--verde-escuro);
 }
+/*.container{
+    max-width:90%;
+}*/
 .renal-title{
     text-transform:uppercase;
     font-weight:bold;
@@ -97,6 +100,7 @@
     .container-logo img {
         border: 7px solid var(--verde-mineral);
         border-radius: 50%;
+        padding-bottom:.3em;
     }
 
     .container-logo h3 {
@@ -121,7 +125,9 @@
     background-color: var(--verde-mineral);
     z-index:999999999;
 }
-
+.is-sticky  .container-logo img{
+    border:7px solid var(--madeira-escura);
+}
 .navbar-expand-lg .navbar-collapse {
     justify-content: end
 }
