@@ -492,8 +492,9 @@ strong {
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   position: relative;
   overflow: hidden;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 6.8em;
+  padding-bottom: 0;
+  
 }
 
 .hero-section .input-group {
