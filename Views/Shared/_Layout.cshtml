@@ -186,7 +186,7 @@
                         </div>
                         <div class="container-icons-footer__text">
                             <h3 style="font-size:3em">Renal Prime</h3>
-                            <h6 style="margin:0">Clínica de nefrologia</h6>
+                            <h6 style="margin:0">Clínica de Nefrologia</h6>
                         </div>
                         <div class="container-icons_footer__body">
                             Cuidando da sua saúde com
@@ -223,7 +223,7 @@
                
             </div>
             <div class="row text-center mt-4"  id="footer-copriright">
-                <h6> Desenvolvido | por Weslley Alberto e <a href="#" target="_blank" title="Site Communic">Comunic Publicidade e Marketing</a></h6>
+                <h6> Desenvolvido | por Weslley Alberto e <a href="http://comunicpublicidade.com" target="_blank" title="Site Comunic">Comunic Publicidade e Marketing</a></h6>
                 <h6>&#169; @DateTime.Now.Year - Todos os Direitos Reservados</h6>
             </div>
         </div>
@@ -308,7 +308,7 @@
        
     </footer>
 
-    <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO&text=SUA_MENSAGEM" title="Fale conosco pelo Whatsapp"
+    <a href="https://api.whatsapp.com/send?phone=556190440103&text=" title="Fale conosco pelo Whatsapp"
        target="_blank"
        id="whatsapp-button">
        
@@ -334,48 +334,7 @@
            
         });
     </script>
-   @*  <script>
-                document.addEventListener('DOMContentLoaded', function () {
-            const navLinks = document.querySelectorAll('.nav-link');
-
-            // Função para remover a classe 'active' de todos os links
-            function removeActiveClasses() {
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                });
-            }
-
-            // Função para definir o link ativo
-            function setActiveLink(page) {
-                removeActiveClasses();
-                const activeLink = document.querySelector(`.nav-link[data-page="${page}"]`);
-                if (activeLink) {
-                    activeLink.classList.add('active');
-                }
-            }
-
-            // Verifica a URL da página atual e ajusta o link ativo
-            const currentPath = window.location.pathname.toLowerCase();
-            if (currentPath.includes('about')) {
-                setActiveLink('about');
-            } else if (currentPath.includes('section1')) {
-                setActiveLink('section1');
-            } else if (currentPath.includes('contato')) {
-                setActiveLink('contato');
-            } else {
-                setActiveLink('home'); // Página inicial padrão
-            }
-
-            // Detecta o clique em links para seções internas e aplica a classe 'active'
-            navLinks.forEach(link => {
-                link.addEventListener('click', function () {
-                    const page = link.getAttribute('data-page');
-                    setActiveLink(page);
-                });
-            });
-        });
-
-    </script> *@
+  
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
