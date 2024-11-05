@@ -576,6 +576,7 @@ li.active .icon-holder {
  /*   border: 1px solid var(--sauvignon);
     border-radius: 17px;*/
     background-color:var(--verde-mineral);
+    margin-bottom:1em;
 }
 .container-contatos__emails__title{
     font-weight:bold;
