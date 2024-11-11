@@ -2,12 +2,12 @@
     string currentController = ViewContext.RouteData.Values["action"].ToString();
     const string colorAtual = "background:var(--madeira-escura);color:white;";
     string color = String.Empty;
-    if(currentController == "Index")
+    if (currentController == "Index")
     {
         color = colorAtual;
 
     }
-    else if(currentController == "BCM")
+    else if (currentController == "BCM")
     {
         color = colorAtual;
     }
@@ -31,7 +31,7 @@
     {
         color = colorAtual;
     }
-    else if(currentController == "Contatos")
+    else if (currentController == "Contatos")
     {
         color = colorAtual;
     }
@@ -39,7 +39,7 @@
     {
         color = colorAtual;
     }
-    else if(currentController == "DialisePeritoneal")
+    else if (currentController == "DialisePeritoneal")
     {
         color = colorAtual;
     }
@@ -60,7 +60,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="~/css/aos.css" />
+    <link rel="stylesheet" href="~/css/aos.css" />
     <link href="~/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="~/css/bootstrap-icons.css" rel="stylesheet">
@@ -70,7 +70,7 @@
     <link href="~/fonts/NeulisAltfont/stylesheet.css" rel="stylesheet" />
     <link href="~/css/whatsapp.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <style>
@@ -94,24 +94,23 @@
             }
         }
 
-       
     </style>
 
 </head>
 <body id="top">
 
-   
+
 
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <div class=" logo-container-fluid" >
+            <div class=" logo-container-fluid">
                 <div class="container-logo">
-                    <img src="~/images/logo/Renal Prime (logo negativa 1).png" >
-                   
+                    <img src="~/images/logo/Renal Prime (logo negativa 1).png">
+
                 </div>
-               @*  <div class="container-logo__subtitle">
-                    <h3>Renal Prime</h3>
-                    <h6>Clínica de Nefrologia</h6>
+                @*  <div class="container-logo__subtitle">
+                <h3>Renal Prime</h3>
+                <h6>Clínica de Nefrologia</h6>
                 </div> *@
 
             </div>
@@ -131,16 +130,16 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink"
-                           role="button" data-bs-toggle="dropdown" aria-expanded="false" >Serviços</a>
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
 
                         <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                           
+
 
                             <li><a class="dropdown-item" asp-action="BCM" style="@(currentController == "BCM" ? @color : ""  )">BCM</a></li>
                             <li><a class="dropdown-item" asp-action="DialisePeritoneal" style="@(currentController == "DialisePeritoneal" ? @color : ""  )"> Diálise Peritoneal</a></li>
 
 
-                            <li><a class="dropdown-item" asp-action="Dialog_Plus" style="@(currentController == "Dialog_Plus" ? @color : ""  )" >Dialog +</a></li>
+                            <li><a class="dropdown-item" asp-action="Dialog_Plus" style="@(currentController == "Dialog_Plus" ? @color : ""  )">Dialog +</a></li>
                             <li><a class="dropdown-item" asp-action="Hemodiafiltracao" style="@(currentController == "Hemodiafiltracao" ? @color : ""  )"> Hemodiafiltração</a></li>
                             <li><a class="dropdown-item" asp-action="Mobissom" style="@(currentController == "Mobissom" ? @color : ""  )"> Mobissom</a></li>
                             <li>
@@ -153,7 +152,7 @@
                     <li class="nav-item" style="display:none">
                         <a class="nav-link click-scroll" href="/#section_2" data-page="#section_2">Compromisso</a>
                     </li>
-                  
+
                     <li class="nav-item">
                         <a class="nav-link " asp-action="NossaClinica" data-page="/NossaClinica" style="@(currentController == "NossaClinica" ? @color : ""  )">Nossa Clínica</a>
                     </li>
@@ -163,10 +162,10 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" asp-action="Contatos" style="@(currentController == "Contatos" ? @color : ""  )" >Contato</a>
+                        <a class="nav-link" asp-action="Contatos" style="@(currentController == "Contatos" ? @color : ""  )">Contato</a>
                     </li>
 
-                   
+
                 </ul>
 
             </div>
@@ -179,11 +178,11 @@
     </main>
 
     <!--section footer classe section-padding-->
-   
+
     <footer class="footer-section">
         <div class="container">
-           
-           
+
+
             <!-- <div class="footer-cta pt-5 pb-5">
                 <div class="row">
                     <div class="col-xl-4 col-md-4 mb-30">
@@ -229,10 +228,12 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="/"><img src="~/images/logo/Renal Prime (logo negativa 2).png" class="img-fluid" alt="logo" 
-                                    style="width:250px"></a>
-                               
-                               
+                                <a href="/">
+                                    <img src="~/images/logo/Renal Prime (logo negativa 2).png" class="img-fluid" alt="logo"
+                                         style="width:250px">
+                                </a>
+
+
                             </div>
                             <div class="line-white"></div>
                             <div class="footer-text">
@@ -245,9 +246,9 @@
 
                                 <div class="footer-widget-heading">
                                     <h3>Nossas Redes</h3>
-                                  
+
                                 </div>
-                               
+
 
                                 <a class="non-link" href="https://www.facebook.com/profile.php?id=61567853542109" title="Facebook da Renal Prime" target="_blank"><i class="bi bi-facebook" style="font-size:2em;"></i></a>
                                 <a class="non-link" href="https://instagram.com.br/renalprime" title="Instagram da Renl Prime" target="_blank"><i class="bi bi-instagram " style="font-size:2em;"></i></a>
@@ -256,7 +257,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 mb-50">
-                        </div>
+                    </div>
                     <div class="col-xl-5 col-lg-5 col-md-5 mb-30">
                         <div class="footer-widget">
                             <div class="footer-widget-heading">
@@ -323,7 +324,7 @@
     <a href="https://api.whatsapp.com/send?phone=556190440103&text=" title="Fale conosco pelo Whatsapp"
        target="_blank" class="non-link"
        id="whatsapp-button">
-       
+
         <img src="~/images/logo/WhatsApp.svg"
              alt="WhatsApp"
              style="width: 70%; height: 70%;">
@@ -337,16 +338,27 @@
 
     <script src="~/js/loading-spinner.js"></script>
     <script src="~/js/aos.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16765456925">
+    </script>
     <script>
         // AOS.init();
         AOS.init({
-            disable:'mobile',
+            disable: 'mobile',
             delay: 300,
             duration: 1000,
-           
+
         });
+                                  
+
+        /*Gtags */
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16765456925');
+
     </script>
-  
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
