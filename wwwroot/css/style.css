@@ -24,6 +24,7 @@
    /* background-color: initial !important;*/
    transition:.6s;
     background-color: var(--verde-escuro);
+    padding:1em 0;
 }
 /*.container{
     max-width:90%;
@@ -139,9 +140,7 @@
 }
 
     .container-logo img {
-        border: 7px solid var(--verde-mineral);
-        border-radius: 50%;
-        padding-bottom:.3em;
+        width:250px;
     }
 
     .container-logo h3 {
@@ -167,7 +166,7 @@
     z-index:999999999;
 }
 .is-sticky  .container-logo img{
-    border:7px solid var(--madeira-escura);
+   /* border:7px solid var(--madeira-escura);*/
 }
 .is-sticky #navbarNav ul li a:hover {
     color: var(--madeira-escura);
@@ -242,7 +241,7 @@
     }
 
 .hero-section {
-    margin-top: 9em;
+    
 }
 /**Sections Master*/
 .section {
