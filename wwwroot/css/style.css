@@ -1028,6 +1028,8 @@ footer .container-logo img {
 .container-wpapper-corpo-clinico__title{
     color:var(--sauvignon);
     font-weight:700;
+    width:100%;
+    text-align:center;
 }
 /*.teste-bg{
     background-image:url('/images/logo/logo_transp.png');
