@@ -576,6 +576,7 @@ li.active .icon-holder {
     border-radius: 17px;*/
     background-color:var(--verde-mineral);
     margin-bottom:1em;
+    align-items:center;
 }
 .container-contatos__emails__title{
     font-weight:bold;
@@ -602,6 +603,8 @@ li.active .icon-holder {
 .container-contatos__emails_wrapper-col{
     display: flex;
     align-items:start;
+    align-items:center;
+    justify-content:center;
     
 }
 .container-contatos__telefone__body {
