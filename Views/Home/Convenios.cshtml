@@ -1,9 +1,44 @@
 ﻿@{
     ViewData["Title"] = "Convênios";
 }
+<style>
+    .list-unstyled li {
+        color: #e6e6e6;
+    }
+    .fw-bold {
+        color: #FFFFFF !important;
+    }
 
+    /* Estilo do container verde com a marca d'água */
+    .box-convenios {
+        background-color: #064236;
+        position: relative;
+        overflow: hidden; /* Evita que a imagem vaze da caixa */
+        z-index: 1;
+    }
 
-<header class="site-header d-flex  section-header-nav bg-renal bg-position-top-right">
+    /* Pseudo-elemento para a logo no fundo */
+    .box-convenios::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 15%; /* Posiciona a logo um pouco cortada na esquerda, como na sua imagem base */
+        transform: translateY(-50%);
+        width: 60%; /* Controle do tamanho da marca d'água */
+        height: 100%;
+        
+        /* IMPORTANTE: Substitua o link abaixo pelo caminho da sua logo real (ex: url('/images/logo-branca.png')) */
+        background-image: url('/images/logo/img28.png'); 
+        
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+        opacity: 0.05; /* Controle a transparência aqui (0.05 é bem suave) */
+        z-index: -1; /* Mantém a imagem atrás do texto */
+    }
+</style>
+
+<header class="site-header d-flex section-header-nav bg-renal bg-position-top-right">
     <div class="container">
         <div class="row resposiva-container">
             <div class="col-md-12 col-xxl-12" id="menu-navegacao" data-aos="fade-right">
@@ -11,61 +46,76 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Início</a></li>
-
-                        <li class="breadcrumb-item active" aria-current="page">
-                            Convênios
-
-                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Convênios</li>
                     </ol>
                 </nav>
 
                 <div class="line"></div>
                 <h2>Convênios</h2>
-                <h4>
-                   Confira o rol de convênios aceitos
+                <h4>Confira o rol de convênios aceitos</h4>
 
-                </h4>
-                <div class="grid-person mt-5">
-                    <div class="grid-wrapper">
-                        <div class="row-grid">
-                            <ul class="owl-carousel" style="display:flex;flex-wrap:wrap;flex-basis:150px;list-style:none;justify-content:center">
-                                <li>
-                                    <img src="~/images/convenios-logo/otorrino-fusma.png" alt="Fusma"
-                                         title="Fusma" width="150" height="155" style="max-width:170px" data-aos="flip-left"/>
-                                </li>
-                                <li>
-                                    <img src="~/images/convenios-logo/unnamed.png" alt="Fusex"
-                                         title="Fusex" width="150" style="max-width:150px" data-aos="flip-left" />
-                                </li>
-                                <li>
-                                    <img src="~/images/convenios-logo/gdf-saude.png"
-                                         alt="GDF SAúde"
-                                         title="GDF Saúde" width="150" style="max-width:150px" data-aos="flip-left" />
-                                </li>
-                                <li style="display:flex;align-items: center;">
-                                    <img src="~/images/convenios-logo/geap-saude-logo-E9F617CC68-seeklogo.com.png"
-                                         alt="Geap-saude" class="mt-4" data-aos="flip-left"
-                                         title="Geap-saude" width="150" height="100" style="max-width:150px;max-height:100"  />
-                                </li>
-                               
-                                <li style="display:flex;align-items: center;" class="mt-4">
-                                    <img src="~/images/convenios-logo/Luminar-horizontal-cor.png" alt="Luminar Saúde"
-                                         title="Luminar Saúde" width="240" height="100" style="max-width:240px" data-aos="flip-left" />
-                                </li>
-                                <li style="display:flex;align-items: center;" class="mt-3">
-                                    <img src="~/images/convenios-logo/logo_saude_brb.png" alt="Saúde BRB"
-                                         title="Saúde BRB" width="200" height="100" style="max-width:200px" data-aos="flip-left" />
-                                </li>
-                              
+                <div class="mt-5 p-4 p-md-5 rounded shadow-sm box-convenios" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-4 mb-md-0">
+                            <ul class="list-unstyled lh-lg mb-0 fs-6 text-white">
+                                <li class="fw-bold">AFEB BRASAL</li>
+                                <li>AFFEGO</li>
+                                <li class="fw-bold">ANAFE SAUDE</li>
+                                <li>ASSEFAZ</li>
+                                <li class="fw-bold">BACEN</li>
+                                <li>BRB</li>
+                                <li class="fw-bold">CAEME &ndash; GO</li>
+                                <li>CAESAN</li>
+                                <li class="fw-bold">CAMARA DOS DEPUTADOS</li>
+                                <li>CAMED</li>
+                                <li class="fw-bold">CARE PLUS</li>
+                                <li>CASEC</li>
+                                <li class="fw-bold">CASEMBRAPA</li>
+                                <li>CASF</li>
+                                <li class="fw-bold">CASSI</li>
+                                <li>CBMDF</li>
+                                <li class="fw-bold">CNTI</li>
+                                <li>CONAB</li>
+                                <li class="fw-bold">EMBRATEL</li>
+                                <li>FAPES</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <ul class="list-unstyled lh-lg mb-0 fs-6 text-white">
+                                <li class="fw-bold">FASCAL</li>
+                                <li>GDF SAÚDE (INAS)</li>
+                                <li class="fw-bold">GEAP</li>
+                                <li>GRAVIA</li>
+                                <li class="fw-bold">LIFE EMPRESARIAL</li>
+                                <li>LUMINAR SAÚDE</li>
+                                <li class="fw-bold">NOTRE DAME</li>
+                                <li>OMINT SAÚDE</li>
+                                <li class="fw-bold">PF SAÚDE</li>
+                                <li>PLAN ASSISTE</li>
+                                <li class="fw-bold">PLAS/JMU</li>
+                                <li>PMDF</li>
+                                <li class="fw-bold">POSTAL SAÚDE</li>
+                                <li>PROASA</li>
+                                <li class="fw-bold">REAL GRANDEZA</li>
+                                <li>SAÚDE CAIXA</li>
+                                <li class="fw-bold">SAÚDE PETROBRAS</li>
+                                <li>SERPRO</li>
+                                <li class="fw-bold">SIS SENADO</li>
+                                <li>STF-MED</li>
+                                <li class="fw-bold">STJ</li>
+                                <li>TJDFT</li>
+                                <li class="fw-bold">TRE SAÚDE</li>
+                                <li>TRF</li>
+                                <li class="fw-bold">TRT SAÚDE</li>
+                                <li>TST SAÚDE</li>
+                                <li class="fw-bold">UNAFISCO SAÚDE</li>
                             </ul>
                         </div>
                     </div>
                 </div>
               
             </div>
-
-            
-
         </div>
     </div>
 </header>
