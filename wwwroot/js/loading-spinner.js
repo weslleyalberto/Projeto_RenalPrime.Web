@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
     mainElement.classList.remove('fade-out-main');
 
     // Adiciona o evento de clique em todos os links
-    const links = document.querySelectorAll('a');
+    const links = document.querySelectorAll('a:not(.non-link)');
+   
     links.forEach(link => {
         link.addEventListener('click', function (event) {
             const target = this.href;
