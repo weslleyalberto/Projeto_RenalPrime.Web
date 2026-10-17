@@ -7,6 +7,7 @@
         color = colorAtual;
 
     }
+    
     else if (currentController == "Convenios"){
         color = colorAtual;
     }
@@ -14,7 +15,12 @@
     {
         color = colorAtual;
     }
-    else if (currentController == "Dialog_Plus")
+    else if (currentController == "Dialog_iq")
+    {
+        color = colorAtual;
+        color = colorAtual;
+    }
+    else if (currentController == "Centro_Terapia_Assistida")
     {
         color = colorAtual;
     }
@@ -145,10 +151,11 @@
 
 
                             <li><a class="dropdown-item" asp-action="BCM" style="@(currentController == "BCM" ? @color : ""  )">BCM</a></li>
+                            <li><a class="dropdown-item" asp-action="Centro_Terapia_Assistida" style="@(currentController == "Centro_Terapia_Assistida" ? @color : ""  )">Centro Terapia Assistida</a></li>
                             <li><a class="dropdown-item" asp-action="DialisePeritoneal" style="@(currentController == "DialisePeritoneal" ? @color : ""  )"> Diálise Peritoneal</a></li>
 
 
-                            <li><a class="dropdown-item" asp-action="Dialog_Plus" style="@(currentController == "Dialog_Plus" ? @color : ""  )">Dialog +</a></li>
+                            <li><a class="dropdown-item" asp-action="Dialog_iq" style="@(currentController == "Dialog_iq" ? @color : ""  )">Dialog iQ</a></li>
                             <li><a class="dropdown-item" asp-action="Hemodiafiltracao" style="@(currentController == "Hemodiafiltracao" ? @color : ""  )"> Hemodiafiltração</a></li>
                             <li><a class="dropdown-item" asp-action="Mobissom" style="@(currentController == "Mobissom" ? @color : ""  )"> Mobissom</a></li>
                             <li>
@@ -163,7 +170,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link " asp-action="NossaClinica" data-page="/NossaClinica" style="@(currentController == "NossaClinica" ? @color : ""  )">Nossa Clínica</a>
+                        <a class="nav-link " asp-action="NossaClinica" data-page="/NossaClinica" style="@(currentController == "NossaClinica" ? @color : ""  )">Nossas Clínicas</a>
                     </li>
 
                     <li class="nav-item">
@@ -274,11 +281,12 @@
                             </div>
                             <ul>
                                 <li><a href="/">Home</a></li>
+                                <li><a asp-action="Centro_Terapia_Assistida">Centro de Terapia Assistida</a></li>
                                 <li><a asp-action="Convenios">Convênios</a></li>
                                 <li><a asp-action="BCM">BCM</a></li>
                                 <li><a asp-action="DialisePeritoneal">Diálise Peritoneal</a></li>
-                                <li><a asp-action="Dialog_Plus">Dialog +</a></li>
-                                <li><a asp-action="Hemodiafiltracao">Hemodiafiltração</a></li>
+                                <li><a asp-action="Dialog_iq">Dialog iQ</a></li>
+                                <li><a asp-action="Hemodiafiltracao">Hem+odiafiltração</a></li>
                                 <li><a asp-action="Mobissom">Mobissom</a></li>
                                 <li><a asp-action="TransplanteRenal">Transplante Renal</a></li>
                                 <li><a asp-action="NossaClinica">Nossa Clínica</a></li>

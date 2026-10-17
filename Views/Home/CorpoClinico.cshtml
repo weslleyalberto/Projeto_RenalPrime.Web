@@ -5,7 +5,7 @@
 <header class="site-header d-flex  section-header-nav bg-renal bg-position-top-right">
     <div class="container">
         <div class="row resposiva-container">
-            <div class="col-md-12 col-xxl-8" id="menu-navegacao" data-aos="fade-right">
+            <div class="col-md-12 col-xxl-7" id="menu-navegacao" data-aos="fade-right">
                 <h5 class="text-start renal-title">Renal Prime</h5>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -21,7 +21,7 @@
                 <div class="line"></div>
                 <h2>Equipe</h2>
                 <h4>
-                     Multidisciplinar
+                    Multidisciplinar
 
                 </h4>
                 <div  style="text-align:justify;">
@@ -42,29 +42,124 @@
                 </div>
             </div>
 
-            <div class="col-md-12 col-xxl-4" id="menu-navegacao" data-aos="fade-left">
+            <div class="col-12 col-lg-6 col-xxl-5" id="menu-navegacao" data-aos="fade-left">
+                <div class="position-relative mx-auto renal-photo-stack">
 
-                <div class="container-bl">
-
-                    <div class="content-wrapper">
-
-                        <div class="images-container">
-                            <div class="circle circle-large">
-                                <img src="/images/img_person/img112.jpg" alt="Imagem 1">
-                            </div>
-                            <div class="circle circle-medium absolute-layout" style="border:20px solid var(--madeira-escura);">
-                                <img src="/images/img_person/img113.jpg" alt="Imagem 2">
-                            </div>
-
-
-                        </div>
+                    <!-- Círculo grande -->
+                    <div class="renal-circle renal-circle-lg">
+                        <img
+                            src="/images/img_clinica/Renalprime/IMG_7326.jpg"
+                            alt="Equipe Renal Prime"
+                            class="renal-img-team"
+                        >
                     </div>
+
+                    <!-- Círculo menor -->
+                    <div class="renal-circle renal-circle-md">
+                        <img
+                            src="/images/img_clinica/Renalprime/IMG_7310.jpg"
+                            alt="Médica Renal Prime"
+                            class="renal-img-doctor"
+                        >
+                    </div>
+
                 </div>
             </div>
 
 
         </div>
+        
+     
     </div>
+    
+    <style>
+        .renal-photo-stack {
+            width: min(100%, 680px);
+            aspect-ratio: 1 / 1.18;
+        }
+
+        /* Base dos círculos */
+        .renal-circle {
+            border-radius: 50%;
+            overflow: hidden;
+            background: #fff7f0;
+            box-sizing: border-box;
+        }
+
+        /* Círculo verde grande */
+        .renal-circle-lg {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border: clamp(14px, 2vw, 26px) solid var(--verde-escuro);
+            position: relative;
+        }
+
+        /* Foto da equipe: mostra todo mundo */
+        .renal-img-team {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            left: 50%;
+            top: 21%;
+            transform: translateX(-50%);
+            display: block;
+        }
+
+        /* Círculo marrom menor */
+        .renal-circle-md {
+            width: 58%;
+            aspect-ratio: 1 / 1;
+            border: clamp(12px, 1.8vw, 22px) solid var(--madeira-escura);
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        /* Foto individual */
+        .renal-img-doctor {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+        }
+
+        /* Tablet */
+        @@media (max-width: 991.98px) {
+        .renal-photo-stack {
+            width: min(100%, 620px);
+        }
+
+        .renal-img-team {
+            top: 23%;
+        }
+
+        .renal-circle-md {
+            width: 56%;
+            bottom: 2%;
+        }
+        }
+
+        /* Mobile */
+        @@media (max-width: 575.98px) {
+        .renal-photo-stack {
+            width: min(100%, 390px);
+            aspect-ratio: 1 / 1.2;
+        }
+
+        .renal-img-team {
+            width: 104%;
+            top: 25%;
+        }
+
+        .renal-circle-md {
+            width: 60%;
+            bottom: 3%;
+        }
+        }
+    </style>
 </header>
 <section class="site-header d-flex  bg-renal bg-position-top-right" style="border-top:10px solid var(--verde-escuro);padding-top:0;padding-top:5em">
     <div class="container">

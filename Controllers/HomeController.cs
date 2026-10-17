@@ -21,7 +21,8 @@ namespace Projeto_RenalPrime.Web.Controllers
         public IActionResult Investimento() => View();
         public IActionResult JornadaPaciente() => View();
         public IActionResult Contatos() => View();
-        public IActionResult Dialog_Plus() => View();
+        public IActionResult Dialog_iq() => View(nameof(Dialog_iq));
+        public IActionResult Centro_Terapia_Assistida() => View(nameof(Centro_Terapia_Assistida));
         public IActionResult BCM() => View();
         public IActionResult Hemodiafiltracao() => View();
         public IActionResult Mobissom() => View();
